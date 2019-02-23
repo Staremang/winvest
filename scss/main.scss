@@ -26,6 +26,8 @@ $line-height-base: 1.2;
 $body-bg: #121116;
 $body-color: white;
 
+$orange: #f6c55d;
+
 @import 'functions';
 @import 'variables';
 @import 'mixins';
@@ -34,4 +36,8 @@ $body-color: white;
 @import 'lib/fullpage.scss';
 
 @import 'fonts';
+
 @import 'global';
+
+@import 'fixed-controls';
+@import 'section-1';

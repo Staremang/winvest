@@ -1,0 +1,252 @@
+$viewport-padding: 75px;
+
+%fixed-block {
+  position: fixed;
+
+  z-index: 999;
+}
+
+.header {
+  @extend %fixed-block;
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 160px;
+
+  //display: flex;
+  //padding: 75px;
+  //align-items: center;
+
+  &__logo {
+    left: $viewport-padding;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    //left: 374px;
+
+    //.fp-viewing-page1 & {
+    //  left: $s1-content-left;
+    //}
+  }
+
+  &__menu {
+    right: $viewport-padding;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.header-logo {
+  background: url("../img/logo.png") center no-repeat;
+  background-size: contain;
+  display: block;
+  width: 158px;
+  height: 42px;
+}
+
+.menu-btn {
+  @include button-reset();
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: $font-weight-medium;
+  padding-right: 54px;
+  //position: relative;
+  &__icon {
+    width: 30px;
+    //height: 12px;
+    position: absolute;
+    display: inline-block;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: flex-end;
+    //justify-content: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    span {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: $orange;
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      &:nth-child(1) {
+        width: 30px;
+        margin-top: -6px;
+        //margin-bottom: 3px;
+      }
+      &:nth-child(2) {
+        width: 17px;
+        margin-top: -1px;
+        //margin-bottom: 3px;
+      }
+      &:nth-child(3) {
+        width: 22px;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.social-links {
+  @extend %fixed-block;
+
+  right: $viewport-padding;
+  top: 50%;
+  transform: translateY(-50%);
+
+  //display: none;
+  //@media (min-width: @width-lg) {
+  //  display: block;
+  //}
+  &__link {
+    color: #b9b9b9;
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    text-align: center;
+    margin: 18px 0;
+
+    > svg {
+      height: 20px;
+    }
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.page-nav {
+  @extend %fixed-block;
+
+  left: $viewport-padding;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &__item {
+    display: block;
+    position: relative;
+
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+    margin-bottom: 27px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 1px;
+      background: #f6c55d;
+      opacity: 0.2;
+      height: 50px;
+      bottom: 15px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg);
+
+      border: 1px solid #f6c55d;
+      background-color: #111114;
+      opacity: 0.34;
+    }
+
+    &.active {
+      &:after {
+        transform: rotate(45deg) scale(1.2);
+        opacity: 1;
+        box-shadow: 0 0 16px 6px rgba(246, 197, 93, 0.25);
+      }
+      &:before {
+        opacity: 1;
+      }
+      .page-nav__name {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #888888;
+
+    position: absolute;
+
+    left: 48px;
+    top: 6px;
+
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__scroll-down {
+    display: block;
+    background: url("../img/mouse.png") center no-repeat;
+    width: 17px;
+    height: 30px;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__scroll-text {
+    position: absolute;
+    transform-origin: right center;
+    text-transform: uppercase;
+    color: #888888;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    right: 50%;
+    bottom: -40px;
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+}
+
+.page-number {
+  @extend %fixed-block;
+
+  right: $viewport-padding;
+  bottom: $viewport-padding;
+
+  font-family: $font-family-neumann;
+
+  &__current {
+    color: $orange;
+
+    font-size: 42px;
+  }
+
+  &__total {
+    color: #888;
+
+    font-size: 21px;
+
+    &::before {
+      content: '/';
+    }
+  }
+}
+
+
+
