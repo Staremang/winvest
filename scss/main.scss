@@ -6,7 +6,6 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
-
 @mixin button-reset {
   border: 0;
   padding: 0;
@@ -16,18 +15,16 @@
   cursor: pointer;
 }
 
+$dev-mode: false;
 
-$dev-mode:          true;
+$font-family-base: 'Podkova', sans-sarif;
+$font-family-neumann: 'Neumann', sans-sarif;
+$font-size-base: 1rem;
+$font-url: '../fonts/';
+$line-height-base: 1.2;
 
-$font-family-base:  'Podkova', sans-sarif;
-$font-family-neumann:  'Neumann', sans-sarif;
-$font-size-base:    1rem;
-$font-url:          '../fonts/';
-$line-height-base:            1.2;
-
-
-$body-bg:            #121116;
-$body-color:         white;
+$body-bg: #121116;
+$body-color: white;
 
 @import 'functions';
 @import 'variables';
@@ -35,11 +32,6 @@ $body-color:         white;
 @import 'reboot';
 
 @import 'lib/fullpage.scss';
-
-
-
-
-
 
 @import 'fonts';
 @import 'global';
