@@ -1,0 +1,37 @@
+.section-5 {
+  @if ($dev-mode) {
+    background: url("../img/rm/05.png") center no-repeat;
+    background-size: 100% auto;
+  } @else {
+    background: url("../img/page-5-bg.jpg") center no-repeat;
+    background-size: 1920px auto;
+  }
+
+  &__container {
+    padding-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-family: $font-family-neumann;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.429;
+
+    //max-width: 410px;
+  }
+
+  &__description {
+    color: #888888;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 2.5rem 0 3rem;
+    max-width: 637px;
+  }
+
+}

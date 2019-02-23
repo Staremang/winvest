@@ -29,7 +29,9 @@ $viewport-padding: 75px;
   &__btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
     //left: 374px;
 
     //.fp-viewing-page1 & {

@@ -1,7 +1,8 @@
 $s1-content-left: 374px;
 
-.fp-viewing-page1 .header__btn {
+.fp-viewing-0 .header__btn {
   left: $s1-content-left;
+  transform: translateY(-50%);
 }
 
 .section-1 {
@@ -10,7 +11,7 @@ $s1-content-left: 374px;
     background-size: 100% auto;
   } @else {
     background: url("../img/page-1-bg.jpg") center no-repeat;
-    background-size: 100% auto;
+    background-size: 1920px auto;
   }
 
   &__container {
