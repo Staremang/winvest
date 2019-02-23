@@ -1,0 +1,338 @@
+$s1-content-left: 374px;
+$viewport-padding: 75px;
+$orange: #f6c55d;
+
+//html {
+//  &:not(.fp-enabled) {
+//    .section {
+//      height: 100vh;
+//    }
+//  }
+//}
+.orange {
+  color: $orange;
+}
+.section {
+  position: relative;
+
+  :not(.fp-enabled) & {
+      height: 100vh;
+  }
+}
+
+
+//@if $dev-mode {
+//  body {
+//    background-image: url("../img/rm/1920.png");
+//    background-size: 1920px auto;
+//    background-position: center top;
+//    background-repeat: no-repeat;
+//  }
+//}
+
+.button {
+  @include button-reset();
+  position: relative;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 18px 37px;
+
+  &:before {
+    content: '';
+    width: 81px;
+    height: 13px;
+    border: 1px solid $orange;
+    border-bottom: 0;
+    border-right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    width: 81px;
+    height: 13px;
+    border: 1px solid $orange;
+    border-top: 0;
+    border-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  z-index: 999;
+  //display: flex;
+  //padding: 75px;
+  //align-items: center;
+
+  &__logo {
+    left: $viewport-padding;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__btn {
+    //left: 374px;
+    .fp-viewing-page1 & {
+      left: $s1-content-left;
+    }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__menu {
+    right: $viewport-padding;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.header-logo {
+  background: url("../img/logo.png") center no-repeat;
+  background-size: contain;
+  display: block;
+  width: 158px;
+  height: 42px;
+}
+
+.menu-btn {
+  @include button-reset();
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: $font-weight-medium;
+  padding-right: 54px;
+  //position: relative;
+  &__icon {
+    width: 30px;
+    //height: 12px;
+    position: absolute;
+    display: inline-block;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: flex-end;
+    //justify-content: center;
+    right: 0;
+    top: 0;
+    height: 100%;
+    span {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: $orange;
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      &:nth-child(1) {
+        width: 30px;
+        margin-top: -6px;
+        //margin-bottom: 3px;
+      }
+      &:nth-child(2) {
+        width: 17px;
+        margin-top: -1px;
+        //margin-bottom: 3px;
+      }
+      &:nth-child(3) {
+        width: 22px;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.social-links {
+  position: fixed;
+  right: $viewport-padding;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+
+  //display: none;
+  //@media (min-width: @width-lg) {
+  //  display: block;
+  //}
+  &__link {
+    color: #b9b9b9;
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    text-align: center;
+    margin: 18px 0;
+    > svg {
+      height: 20px;
+    }
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.page-nav {
+  position: fixed;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+
+  //display: none;
+  //@media (min-width: @width-lg) {
+  //  display: block;
+  //}
+  &__name {
+    opacity: 0;
+    position: absolute;
+    user-select: none;
+    display: none;
+    white-space: nowrap;
+    right: 20px;
+  }
+  &__item {
+    display: block;
+    text-align: right;
+    //font-family: @font-bebas;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 18px;
+    position: relative;
+    padding-right: 20px;
+    margin: 5px 0;
+    height: 20px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #b9b9b9;
+      right: 0;
+      top: 6px;
+      transform: rotate(45deg);
+    }
+    &:hover {
+      > .page-nav__name {
+        opacity: 1;
+        display: block;
+      }
+      &:after {
+        background: #76c045;
+        transform: rotate(45deg) scale(1.5);
+        box-shadow: 1px 1px 7px 0px #76c045;
+      }
+    }
+  }
+}
+.page-number {
+  font-family: $font-family-neumann;
+  position: fixed;
+  right: $viewport-padding;
+  bottom: $viewport-padding;
+  z-index: 999;
+  &__current {
+    color: $orange;
+    font-size: 42px;
+  }
+  &__total {
+    color: #888888;
+    font-size: 21px;
+    &:before {
+      content: '/';
+    }
+  }
+}
+
+.section-1 {
+  @if ($dev-mode) {
+    background: url("../img/rm/01.png") center no-repeat;
+    background-size: 100% auto;
+  } @else {
+    background: url("../img/page-1-bg.jpg") center no-repeat;
+    background-size: 100% auto;
+  }
+  &__container {
+    padding-left: $s1-content-left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+  &__title {
+    font-size: 42px;
+    font-family: $font-family-neumann;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.429;
+
+    //max-width: 410px;
+  }
+  &__description {
+    color: #888888;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 2.5rem 0 3rem;
+  }
+  &__quote {
+    position: absolute;
+    left: (892 / 1920 * 100%);
+    bottom: 68px;
+  }
+}
+
+//@mixin image-size($path, $factor: 1) {
+//  width: image-width($path) / $factor;
+//  height: image-height($path) / $factor;
+//}
+
+.quote {
+  text-align: right;
+  &__text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+    &:first-child {
+      font-weight: $font-weight-semibold;
+      color: $orange;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        background: url("../img/icons/quote.svg") center no-repeat;
+        background-size: contain;
+        width: 68px;
+        height: 63px;
+        margin-right: 7px;
+      }
+    }
+  }
+  &__author {
+    font-size: 18px;
+    line-height: 1;
+    text-align: right;
+    color: #888888;
+    margin-top: 26px;
+    display: inline-block;
+    position: relative;
+    &:before {
+      content: '';
+      background: url("../img/quote-decor-line.png") center no-repeat;
+      width: 390px;
+      height: 13px;
+      position: absolute;
+      right: 120%;
+      bottom: 2px;
+    }
+  }
+}
