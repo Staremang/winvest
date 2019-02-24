@@ -31,7 +31,7 @@ $viewport-padding: 75px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .3s ease;
+    transition: all .3s ease-out;
     //left: 374px;
 
     //.fp-viewing-page1 & {
@@ -48,7 +48,7 @@ $viewport-padding: 75px;
 }
 
 .header-logo {
-  background: url("../img/logo.png") center no-repeat;
+  background: url('../img/logo.png') center no-repeat;
   background-size: contain;
   display: block;
   width: 158px;
@@ -62,6 +62,36 @@ $viewport-padding: 75px;
   font-weight: $font-weight-medium;
   padding-right: 54px;
   //position: relative;
+
+  &:hover {
+    .menu-btn__icon {
+      span {
+        width: 100%;
+      }
+    }
+  }
+
+  &.active {
+    .menu-btn__icon {
+      span {
+        width: 100%;
+        margin-top: -1px;
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
   &__icon {
     width: 30px;
     //height: 12px;
@@ -74,6 +104,7 @@ $viewport-padding: 75px;
     right: 0;
     top: 0;
     height: 100%;
+
     span {
       display: block;
       height: 2px;
@@ -82,17 +113,20 @@ $viewport-padding: 75px;
       position: absolute;
       top: 50%;
       right: 0;
+      transition: all .3s ease;
 
       &:nth-child(1) {
         width: 30px;
         margin-top: -6px;
         //margin-bottom: 3px;
       }
+
       &:nth-child(2) {
         width: 17px;
         margin-top: -1px;
         //margin-bottom: 3px;
       }
+
       &:nth-child(3) {
         width: 22px;
         margin-top: 4px;
@@ -119,6 +153,7 @@ $viewport-padding: 75px;
     width: 30px;
     text-align: center;
     margin: 18px 0;
+    transition: all .3s ease;
 
     > svg {
       height: 20px;
@@ -146,7 +181,7 @@ $viewport-padding: 75px;
     padding: 9px;
     margin-bottom: 27px;
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       left: 50%;
@@ -157,7 +192,7 @@ $viewport-padding: 75px;
       bottom: 15px;
     }
 
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       width: 12px;
@@ -170,14 +205,16 @@ $viewport-padding: 75px;
     }
 
     &.active {
-      &:after {
+      &::after {
         transform: rotate(45deg) scale(1.2);
         opacity: 1;
         box-shadow: 0 0 16px 6px rgba(246, 197, 93, 0.25);
       }
-      &:before {
+
+      &::before {
         opacity: 1;
       }
+
       .page-nav__name {
         opacity: 1;
         visibility: visible;
@@ -202,7 +239,7 @@ $viewport-padding: 75px;
 
   &__scroll-down {
     display: block;
-    background: url("../img/mouse.png") center no-repeat;
+    background: url('../img/mouse.png') center no-repeat;
     width: 17px;
     height: 30px;
     position: relative;
@@ -240,7 +277,7 @@ $viewport-padding: 75px;
   }
 
   &__total {
-    color: #888;
+    color: #888888;
 
     font-size: 21px;
 

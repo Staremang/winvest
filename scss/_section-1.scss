@@ -7,10 +7,10 @@ $s1-content-left: 374px;
 
 .section-1 {
   @if ($dev-mode) {
-    background: url("../img/rm/01.png") center no-repeat;
+    background: url('../img/rm/01.png') center no-repeat;
     background-size: 100% auto;
   } @else {
-    background: url("../img/page-1-bg.jpg") center no-repeat;
+    background: url('../img/page-1-bg.jpg') center no-repeat;
     background-size: 1920px auto;
   }
 
@@ -54,18 +54,20 @@ $s1-content-left: 374px;
 
 .quote {
   text-align: right;
+
   &__text {
     text-align: left;
     font-size: 20px;
     line-height: 26px;
+
     &:first-child {
       font-weight: $font-weight-semibold;
       color: $orange;
 
-      &:before {
+      &::before {
         content: '';
         display: inline-block;
-        background: url("../img/icons/quote.svg") center no-repeat;
+        background: url('../img/icons/quote.svg') center no-repeat;
         background-size: contain;
         width: 68px;
         height: 63px;
@@ -82,9 +84,10 @@ $s1-content-left: 374px;
     margin-top: 26px;
     display: inline-block;
     position: relative;
-    &:before {
+
+    &::before {
       content: '';
-      background: url("../img/quote-decor-line.png") center no-repeat;
+      background: url('../img/quote-decor-line.png') center no-repeat;
       width: 390px;
       height: 13px;
       position: absolute;
