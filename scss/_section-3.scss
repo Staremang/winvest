@@ -17,19 +17,100 @@
 
 .service {
   display: flex;
+  align-items: center;
+  position: absolute;
+
   &__img {
     width: 87px;
     height: 87px;
     border-radius: 50%;
     border: 1px solid $orange;
     position: relative;
-    &:before {
+
+    &::before {
       content: '';
       background: url('../img/service-img-bg.png') center no-repeat;
       background-size: contain;
       width: 149px;
       height: 149px;
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
+  //&__btn {
+  //  @include button-reset();
+  //}
+  &__text {
+    color: #888888;
+  }
+
+  &__icon {
+    width: 31px;
+    height: 31px;
+
+    border: 1px solid $orange;
+    border-radius: 50%;
+    position: relative;
+    background: black;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 13px;
+      height: 1px;
+      background: $orange;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover ~ .service__hidden {
+      display: block;
+      transform: scale(1);
+    }
+  }
+
+  &__hidden {
+    width: 315px;
+    //display: none;
+    position: absolute;
+    border: 1px solid $orange;
+    top: 50%;
+
+    left: calc(100% - 15px);
+
+    transform: scale(0);
+    transition: all .3s ease-out;
+    transform-origin: left top;
+    overflow: hidden;
+  }
+
+  &__hidden-text {
+    width: 315px;
+    height: auto;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 28px;
+    transform: none!important;
+  }
+
+  &__hover {
+    position: relative;
+
+    //&:hover {
+    //.service__hidden
+    //}
+  }
+
 }
