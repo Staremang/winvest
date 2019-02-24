@@ -12,24 +12,32 @@
 }
 
 .services {
-  padding-top: 392px;
+  //padding-top: 392px;
+
   &__diagram {
     background: url('../img/services-bg.png') center no-repeat;
-    background-size: auto;
-    height: 389px;
+    //background-size: auto;
+    height: 580px;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
 
     position: relative;
 
     //&::before {
     //  content: '';
+    //  position: relative;
+    //  display: block;
     //  background: url('../img/services-bg.png') center no-repeat;
     //  background-size: contain;
+    //  width: 392px;
     //  height: 389px;
-    //  width: 100%;
+    //  top: 50%;
+    //  left: 50%;
+    //  transform: translate(-50%, -50%);
     //}
   }
 }
-
 
 .service {
   display: flex;
@@ -39,67 +47,144 @@
   top: 50%;
   left: 50%;
 
-  @mixin el-sequence($sequence) {
+
+  $delay: .05s;
+
+  opacity: 0;
+  transition: $animation;
+
+  .active & {
+    opacity: 1;
+  }
+
+  &_reverse {
     .service {
       &__icon {
-        margin-#{$sequence}: 11px;
+        left: auto;
+        right: calc(100% + 11px); // Re
       }
 
       &__hover {
-        @if ($sequence == right) {
-          flex-direction: row-reverse;
-        }
-
-        #{$sequence}: 100%;
-        margin-#{$sequence}: 20px;
+        left: auto;
+        right: calc(100% + 20px); // Re
       }
 
       &__hidden {
-        #{$sequence}: calc(100% - 15px);
-        transform-origin: #{$sequence} top;
+        left: auto;
+        right: calc(100% + 26px);
+        transform-origin: right top;
       }
     }
   }
 
-  &_reverse {
-    @include el-sequence ('right');
-    flex-direction: row-reverse;
-  }
-
-  &:not(.service_reverse) {
-    @include el-sequence ('left');
-  }
-
   &_signal {
     transform: translate(137px, -218px);
+    z-index: 3;
+    transition-delay: ($delay * 0);
+
+    .service__img::after {
+      background-image: url('../img/signal-icon.png');
+      width: 42px;
+      height: 48px;
+      left: 22px;
+      top: 22px;
+    }
   }
 
   &_livecopy {
     transform: translate(195px, -12px);
+    z-index: 2;
+    transition-delay: ($delay * 1);
+
+    .service__img::after {
+      background-image: url('../img/livecopy.png');
+      width: 45px;
+      height: 43px;
+      left: 21px;
+      top: 23px;
+    }
   }
 
   &_individual {
     transform: translate(88px, 163px);
+    z-index: 1;
+    transition-delay: ($delay * 2);
+
+    .service__img::after {
+      background-image: url('../img/diagram.png');
+      width: 38px;
+      height: 43px;
+      left: 24px;
+      top: 21px;
+    }
 
     .service__hidden {
       transform-origin: left bottom;
+      bottom: 50%;
+      top: auto;
     }
   }
 
   &_hedge-fund {
     transform: translate(-132px, 187px);
+    z-index: 4;
+    transition-delay: ($delay * 3);
+
+    .service__img::after {
+      background-image: url('../img/home.png');
+      width: 40px;
+      height: 34px;
+      top: 25px;
+      left: 24px;
+    }
+
+    .service__hidden {
+      transform-origin: right bottom;
+      bottom: 50%;
+      top: auto;
+    }
   }
 
   &_algotrading {
     transform: translate(-280px, 37px);
+    z-index: 1;
+    transition-delay: ($delay * 4);
+
+    .service__img::after {
+      background-image: url('../img/rocket.png');
+      width: 41px;
+      height: 41px;
+      top: 26px;
+      left: 20px;
+    }
   }
 
   &_academy {
     transform: translate(-250px, -180px);
+    z-index: 2;
+    transition-delay: ($delay * 5);
+
+    .service__img::after {
+      background-image: url('../img/diagram-2.png');
+      width: 48px;
+      height: 44px;
+      top: 21px;
+      left: 16px;
+    }
   }
 
   &_mirror-trading {
     transform: translate(-66px, -281px);
+    z-index: 3;
+    transition-delay: ($delay * 6);
+
+    .service__img::after {
+      background-image: url('../img/cup.png');
+      width: 40px;
+      height: 35px;
+      top: 29px;
+      left: 24px;
+    }
   }
 
   &__img {
@@ -109,9 +194,12 @@
     border: 1px solid $orange;
     position: relative;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &::after {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+    }
 
     &::before {
       content: '';
@@ -124,6 +212,14 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &__hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: calc(100% + 20px); // Re
   }
 
   &__text {
@@ -144,11 +240,10 @@
     border: 1px solid $orange;
     border-radius: 50%;
 
-    margin-left: 11px;
-    margin-right: 11px;
+    margin-top: -15px;
 
     top: 50%;
-    transform: translateY(-50%);
+    left: calc(100% + 11px); // Re
 
     &::before,
     &::after {
@@ -173,7 +268,6 @@
     }
 
     &:hover {
-      //transform: rotate(45deg);
       &::before {
         transform: translate(-50%, -50%) rotate(90deg + 45);
       }
@@ -182,7 +276,7 @@
         transform: translate(-50%, -50%) rotate(45deg);
       }
 
-      & ~ .service__hidden {
+      ~ .service__hidden {
         transform: scale(1);
       }
     }
@@ -190,37 +284,19 @@
 
   &__hidden {
     width: 315px;
-    //display: none;
     position: absolute;
     border: 1px solid $orange;
-    top: 50%;
+    background: rgba(black, .6);
 
     transform: scale(0);
     transition: $animation;
-    //overflow: hidden;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 18/16rem;
+    line-height: 24/16rem;
     padding: 15px 28px;
-  }
-
-  //&__hidden-text {
-  //  width: 315px;
-  //  height: auto;
-  //}
-
-  &__hover {
-    //position: relative;
-
-    position: absolute;
-    display: flex;
-    align-items: center;
 
     top: 50%;
-    transform: translateY(-50%);
 
-    //&:hover {
-    //.service__hidden
-    //}
+    left: calc(100% + 26px);
+    transform-origin: left top;
   }
-
 }
