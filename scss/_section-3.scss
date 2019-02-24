@@ -1,0 +1,35 @@
+.section-3 {
+  //display: block;
+  //overflow: hidden;
+  //padding-top: 100px;
+  @if ($dev-mode) {
+    background: url('../img/rm/06_2.png') center no-repeat;
+    background-size: 100% auto;
+  } @else {
+    background: url('../img/bg.jpg') center no-repeat;
+    background-size: cover;
+  }
+}
+
+.services {
+
+}
+
+.service {
+  display: flex;
+  &__img {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    border: 1px solid $orange;
+    position: relative;
+    &:before {
+      content: '';
+      background: url('../img/service-img-bg.png') center no-repeat;
+      background-size: contain;
+      width: 149px;
+      height: 149px;
+      position: absolute;
+    }
+  }
+}

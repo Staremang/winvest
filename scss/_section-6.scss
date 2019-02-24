@@ -7,7 +7,7 @@
     background-size: 100% auto;
   } @else {
     background: url('../img/bg.jpg') center no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -98,7 +98,7 @@
       position: relative;
     }
 
-    &:before {
+    &::before {
       content: '';
       display: block;
       position: absolute;

@@ -1,9 +1,9 @@
 .section-5 {
   @if ($dev-mode) {
-    background: url("../img/rm/05.png") center no-repeat;
+    background: url('../img/rm/05.png') center no-repeat;
     background-size: 100% auto;
   } @else {
-    background: url("../img/page-5-bg.jpg") center no-repeat;
+    background: url('../img/page-5-bg.jpg') center no-repeat;
     background-size: 1920px auto;
   }
 
@@ -30,8 +30,83 @@
     color: #888888;
     font-size: 18px;
     line-height: 26px;
-    margin: 2.5rem 0 3rem;
+    margin: 2.5rem 0 4rem;
     max-width: 637px;
   }
+}
 
+.btn-play {
+  @include button-reset();
+
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-left: 50px;
+  //outline: none;
+
+  &:hover {
+    .btn-play__icon {
+      &::before {
+        transform: rotate(180deg);
+      }
+
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__icon {
+    position: relative;
+    vertical-align: middle;
+
+    background: url('../img/icons/play.svg');
+    width: 17px;
+    height: 23px;
+    display: inline-block;
+    margin-right: 70px;
+    //
+    //&::before,
+    //&::after {
+    //
+    //}
+
+    &::before {
+      content: '';
+      background: url('../img/play-outer-circle.png') center no-repeat;
+      width: 136px;
+      height: 136px;
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      margin-left: (-136px / 2);
+      margin-top: (-136px / 2);
+
+      transition: all .5s ease;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: '';
+      background: url('../img/play-inner-circle.png') center no-repeat;
+      background-size: contain;
+      width: 109px;
+      height: 109px;
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      margin-left: (-109px / 2);
+      margin-top: (-109px / 2);
+
+      transition: all .5s ease;
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    vertical-align: middle;
+  }
 }
