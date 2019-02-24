@@ -16,12 +16,14 @@
 }
 
 $dev-mode: false;
+$control-disabled: true;
 
 $font-family-base: 'Podkova', sans-sarif;
 $font-family-neumann: 'Neumann', sans-sarif;
 $font-size-base: 1rem;
 $font-url: '../fonts/';
 $line-height-base: 1.2;
+$animation: all .3s ease;
 
 $body-bg: #121116;
 $body-color: white;

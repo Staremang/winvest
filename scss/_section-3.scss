@@ -3,7 +3,7 @@
   //overflow: hidden;
   //padding-top: 100px;
   @if ($dev-mode) {
-    background: url('../img/rm/06_2.png') center no-repeat;
+    background: url('../img/rm/03.png') center no-repeat;
     background-size: 100% auto;
   } @else {
     background: url('../img/bg.jpg') center no-repeat;
@@ -12,13 +12,95 @@
 }
 
 .services {
+  padding-top: 392px;
+  &__diagram {
+    background: url('../img/services-bg.png') center no-repeat;
+    background-size: auto;
+    height: 389px;
 
+    position: relative;
+
+    //&::before {
+    //  content: '';
+    //  background: url('../img/services-bg.png') center no-repeat;
+    //  background-size: contain;
+    //  height: 389px;
+    //  width: 100%;
+    //}
+  }
 }
+
 
 .service {
   display: flex;
   align-items: center;
   position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  @mixin el-sequence($sequence) {
+    .service {
+      &__icon {
+        margin-#{$sequence}: 11px;
+      }
+
+      &__hover {
+        @if ($sequence == right) {
+          flex-direction: row-reverse;
+        }
+
+        #{$sequence}: 100%;
+        margin-#{$sequence}: 20px;
+      }
+
+      &__hidden {
+        #{$sequence}: calc(100% - 15px);
+        transform-origin: #{$sequence} top;
+      }
+    }
+  }
+
+  &_reverse {
+    @include el-sequence ('right');
+    flex-direction: row-reverse;
+  }
+
+  &:not(.service_reverse) {
+    @include el-sequence ('left');
+  }
+
+  &_signal {
+    transform: translate(137px, -218px);
+  }
+
+  &_livecopy {
+    transform: translate(195px, -12px);
+  }
+
+  &_individual {
+    transform: translate(88px, 163px);
+
+    .service__hidden {
+      transform-origin: left bottom;
+    }
+  }
+
+  &_hedge-fund {
+    transform: translate(-132px, 187px);
+  }
+
+  &_algotrading {
+    transform: translate(-280px, 37px);
+  }
+
+  &_academy {
+    transform: translate(-250px, -180px);
+  }
+
+  &_mirror-trading {
+    transform: translate(-66px, -281px);
+  }
 
   &__img {
     width: 87px;
@@ -26,6 +108,10 @@
     border-radius: 50%;
     border: 1px solid $orange;
     position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &::before {
       content: '';
@@ -39,32 +125,43 @@
       transform: translate(-50%, -50%);
     }
   }
-  //&__btn {
-  //  @include button-reset();
-  //}
+
   &__text {
     color: #888888;
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   &__icon {
+    position: absolute;
+    z-index: 1;
+
     width: 31px;
     height: 31px;
 
+    background: black;
     border: 1px solid $orange;
     border-radius: 50%;
-    position: relative;
-    background: black;
-    z-index: 1;
+
+    margin-left: 11px;
+    margin-right: 11px;
+
+    top: 50%;
+    transform: translateY(-50%);
 
     &::before,
     &::after {
       content: '';
+      position: absolute;
+
       width: 13px;
       height: 1px;
+
       background: $orange;
-      position: absolute;
       top: 50%;
       left: 50%;
+      transition: $animation;
     }
 
     &::before {
@@ -75,9 +172,19 @@
       transform: translate(-50%, -50%);
     }
 
-    &:hover ~ .service__hidden {
-      display: block;
-      transform: scale(1);
+    &:hover {
+      //transform: rotate(45deg);
+      &::before {
+        transform: translate(-50%, -50%) rotate(90deg + 45);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      & ~ .service__hidden {
+        transform: scale(1);
+      }
     }
   }
 
@@ -88,25 +195,28 @@
     border: 1px solid $orange;
     top: 50%;
 
-    left: calc(100% - 15px);
-
     transform: scale(0);
-    transition: all .3s ease-out;
-    transform-origin: left top;
-    overflow: hidden;
-  }
-
-  &__hidden-text {
-    width: 315px;
-    height: auto;
+    transition: $animation;
+    //overflow: hidden;
     font-size: 18px;
     line-height: 24px;
-    padding: 20px 28px;
-    transform: none!important;
+    padding: 15px 28px;
   }
 
+  //&__hidden-text {
+  //  width: 315px;
+  //  height: auto;
+  //}
+
   &__hover {
-    position: relative;
+    //position: relative;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    top: 50%;
+    transform: translateY(-50%);
 
     //&:hover {
     //.service__hidden

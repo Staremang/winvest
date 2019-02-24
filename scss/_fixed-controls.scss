@@ -1,8 +1,11 @@
 $viewport-padding: 75px;
 
 %fixed-block {
-  position: fixed;
+  @if ($control-disabled) {
+    display: none;
+  }
 
+  position: fixed;
   z-index: 999;
 }
 
