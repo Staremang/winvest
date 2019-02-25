@@ -16,7 +16,7 @@
 }
 
 $dev-mode: false;
-$control-disabled: true;
+$control-disabled: false;
 
 $font-family-base: 'Podkova', sans-sarif;
 $font-family-neumann: 'Neumann', sans-sarif;
@@ -35,7 +35,8 @@ $orange: #f6c55d;
 @import 'mixins';
 @import 'reboot';
 
-@import 'lib/fullpage.scss';
+//@import 'lib/fullpage';
+@import 'lib/onepage-scroll';
 
 @import 'fonts';
 
@@ -43,6 +44,6 @@ $orange: #f6c55d;
 
 @import 'fixed-controls';
 @import 'section-1';
-@import "section-3";
+@import 'section-3';
 @import 'section-5';
 @import 'section-6';

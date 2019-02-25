@@ -14,6 +14,17 @@
 .services {
   //padding-top: 392px;
 
+  &__title {
+    font-size: 32px;
+    font-family: $font-family-neumann;
+    color: white;
+    text-transform: uppercase;
+    //text-align: center;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 300px;
+  }
+
   &__diagram {
     background: url('../img/services-bg.png') center no-repeat;
     //background-size: auto;
