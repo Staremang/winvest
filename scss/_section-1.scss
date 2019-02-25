@@ -1,4 +1,4 @@
-$s1-content-left: 374px;
+$s1-content-left: (374 / 1920 * 100%);
 
 .viewing-page-1 .header__btn {
   left: $s1-content-left;
@@ -10,9 +10,27 @@ $s1-content-left: 374px;
     background: url('../img/rm/01.png') center no-repeat;
     background-size: 100% auto;
   } @else {
-    background: url('../img/page-1-bg.jpg') center no-repeat;
-    background-size: 1920px auto;
+    //background: url('../img/page-1-bg.jpg') center no-repeat;
+    //background-size: 1920px auto;
   }
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  //background: red;
+  &:before {
+    content: '';
+    background: url("../img/hero-man.png") no-repeat;
+    background-size: contain;
+    width: 869px;
+    height: 892px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+  }
+
+
 
   &__container {
     padding-left: $s1-content-left;
@@ -21,6 +39,11 @@ $s1-content-left: 374px;
     align-items: flex-start;
     justify-content: center;
     height: 100%;
+
+    position: relative;
+    z-index: 2;
+
+    //background: url("../img/hero-man.png") 75% top no-repeat;
   }
 
   &__title {
@@ -44,6 +67,7 @@ $s1-content-left: 374px;
     position: absolute;
     left: (892 / 1920 * 100%);
     bottom: 68px;
+
   }
 }
 

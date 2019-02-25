@@ -4,6 +4,8 @@ $(document).ready(function () {
     //     // autoScrolling: true,
     //     // scrollHorizontally: true
     // });
+    $('.section-1').addClass('viewed')
+    // $('.header').addClass('animate');
 
     $main = $('.main');
 
