@@ -4,7 +4,7 @@ $(document).ready(function () {
     //     // autoScrolling: true,
     //     // scrollHorizontally: true
     // });
-    $('.section-1').addClass('viewed')
+    $('.section-1').addClass('viewed');
     // $('.header').addClass('animate');
 
     $main = $('.main');
@@ -15,7 +15,7 @@ $(document).ready(function () {
         pagination: false,
         beforeMove: function(index) {
             $('.page-number__current').text(('0' + index).slice(-2));
-            $('.page-nav').find('[data-index]').removeClass('active')
+            $('.page-nav').find('[data-index]').removeClass('active');
             $('.page-nav').find('[data-index=' + index + ']').addClass('active');
 
             $('[data-index]').removeClass('viewed');
