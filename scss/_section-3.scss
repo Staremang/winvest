@@ -58,13 +58,10 @@
   top: 50%;
   left: 50%;
 
-
-  $delay: .05s;
-
   opacity: 0;
   transition: $animation;
 
-  .active & {
+  .viewed & {
     opacity: 1;
   }
 
@@ -91,7 +88,7 @@
   &_signal {
     transform: translate(137px, -218px);
     z-index: 3;
-    transition-delay: ($delay * 0);
+    transition-delay: ($delay + $delay-interval * 0);
 
     .service__img::after {
       background-image: url('../img/signal-icon.png');
@@ -105,7 +102,7 @@
   &_livecopy {
     transform: translate(195px, -12px);
     z-index: 2;
-    transition-delay: ($delay * 1);
+    transition-delay: ($delay + $delay-interval * 1);
 
     .service__img::after {
       background-image: url('../img/livecopy.png');
@@ -119,7 +116,7 @@
   &_individual {
     transform: translate(88px, 163px);
     z-index: 1;
-    transition-delay: ($delay * 2);
+    transition-delay: ($delay + $delay-interval * 2);
 
     .service__img::after {
       background-image: url('../img/diagram.png');
@@ -139,7 +136,7 @@
   &_hedge-fund {
     transform: translate(-132px, 187px);
     z-index: 4;
-    transition-delay: ($delay * 3);
+    transition-delay: ($delay + $delay-interval * 3);
 
     .service__img::after {
       background-image: url('../img/home.png');
@@ -159,7 +156,7 @@
   &_algotrading {
     transform: translate(-280px, 37px);
     z-index: 1;
-    transition-delay: ($delay * 4);
+    transition-delay: ($delay + $delay-interval * 4);
 
     .service__img::after {
       background-image: url('../img/rocket.png');
@@ -173,7 +170,7 @@
   &_academy {
     transform: translate(-250px, -180px);
     z-index: 2;
-    transition-delay: ($delay * 5);
+    transition-delay: ($delay + $delay-interval * 5);
 
     .service__img::after {
       background-image: url('../img/diagram-2.png');
@@ -187,7 +184,7 @@
   &_mirror-trading {
     transform: translate(-66px, -281px);
     z-index: 3;
-    transition-delay: ($delay * 6);
+    transition-delay: ($delay + $delay-interval * 6);
 
     .service__img::after {
       background-image: url('../img/cup.png');

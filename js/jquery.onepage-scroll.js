@@ -93,6 +93,7 @@
         paginationList = "";
 
     $.fn.transformPage = function(settings, pos, index) {
+      // console.log(this);
       if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
 
       // Just a simple edit that makes use of modernizr to detect an IE8 browser and changes the transform method into
@@ -138,7 +139,7 @@
       }else {
         pos = (index * 100) * -1;
       }
-      if (typeof settings.beforeMove == 'function') settings.beforeMove( next.data("index"));
+      // if (typeof settings.beforeMove == 'function') settings.beforeMove( next.data("index"));
       current.removeClass("active")
       next.addClass("active");
       if(settings.pagination == true) {
@@ -173,7 +174,7 @@
       }else {
         pos = ((next.data("index") - 1) * 100) * -1;
       }
-      if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
+      // if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
       current.removeClass("active")
       next.addClass("active")
       if(settings.pagination == true) {
@@ -194,7 +195,7 @@
       current = $(settings.sectionContainer + ".active")
       next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
       if(next.length > 0) {
-        if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
+        // if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
         current.removeClass("active")
         next.addClass("active")
         $(".onepage-pagination li a" + ".active").removeClass("active");

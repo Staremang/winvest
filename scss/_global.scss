@@ -1,4 +1,3 @@
-
 //html {
 //  &:not(.fp-enabled) {
 //    .section {
@@ -52,7 +51,6 @@
   text-transform: uppercase;
   padding: 18px 37px;
 
-
   &::before {
     @extend %button-corners;
 
@@ -79,5 +77,76 @@
     &::after {
       transform: translate(5px, 5px);
     }
+  }
+}
+
+.animated {
+  animation-delay: $delay;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.viewed {
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  .fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+
+  .fadeInRight {
+    animation-name: fadeInRight;
   }
 }

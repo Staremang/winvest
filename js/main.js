@@ -5,10 +5,29 @@ $(document).ready(function () {
     //     // scrollHorizontally: true
     // });
 
-    $('.main').onepage_scroll({
+    $main = $('.main');
+
+    $main.onepage_scroll({
         sectionContainer: ".section",
         loop: false,
+        pagination: false,
+        beforeMove: function(index) {
+            $('.page-number__current').text(('0' + index).slice(-2));
+            $('.page-nav').find('[data-index]').removeClass('active')
+            $('.page-nav').find('[data-index=' + index + ']').addClass('active');
+
+            $('[data-index]').removeClass('viewed');
+            for (var i = index; i > 0; i--) {
+                $('[data-index=' + i + ']').addClass('viewed');
+            }
+        }
     });
+
+    $('.page-nav__item').on('click', function (e) {
+        e.preventDefault();
+
+        $main.moveTo($(this).data('index'));
+    })
     // $(".main").onepage_scroll({
     //     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
     //     easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -25,6 +44,6 @@ $(document).ready(function () {
     //     // the browser's width is less than 600, the fallback will kick in.
     //     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
     // });
-    //methods
+    // methods
     // $.fn.fullpage.setAllowScrolling(false);
 });

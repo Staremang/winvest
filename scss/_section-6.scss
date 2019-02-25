@@ -69,6 +69,22 @@
 .trader-prev {
   //margin: 200px;
   width: 120px;
+  opacity: 0;
+  transition: $animation;
+
+  .viewed & {
+    opacity: 1;
+  }
+
+  &:nth-child(1) {
+    transition-delay: ($delay + $delay-interval * 0);
+  }
+  &:nth-child(2) {
+    transition-delay: ($delay + $delay-interval * 4);
+  }
+  &:nth-child(3) {
+    transition-delay: ($delay + $delay-interval * 8);
+  }
 
   &:not(:last-child) {
     margin-bottom: 36px;
@@ -122,6 +138,19 @@
   }
 }
 
+.trader-item {
+  position: relative;
+  &__img {
+    position: absolute;
+
+    //top: 50%;
+    //transform: translateY(-50%);
+
+    top: 10px;
+    left: -350px;
+    z-index: 1;
+  }
+}
 .trader-info {
   //margin-left: 973px;
   //margin-top: 332px;

@@ -193,6 +193,7 @@ $viewport-padding: 75px;
       opacity: 0.2;
       height: 50px;
       bottom: 15px;
+      transition: $animation;
     }
 
     &::after {
@@ -205,9 +206,10 @@ $viewport-padding: 75px;
       border: 1px solid #f6c55d;
       background-color: #111114;
       opacity: 0.34;
+      transition: $animation;
     }
 
-    &.active {
+    &.viewed {
       &::after {
         transform: rotate(45deg) scale(1.2);
         opacity: 1;
@@ -217,10 +219,13 @@ $viewport-padding: 75px;
       &::before {
         opacity: 1;
       }
+    }
 
+    &.active {
       .page-nav__name {
         opacity: 1;
         visibility: visible;
+        transform: translateX(0);
       }
     }
   }
@@ -237,7 +242,9 @@ $viewport-padding: 75px;
     top: 6px;
 
     opacity: 0;
+    transform: translateX(-100%);
     visibility: hidden;
+    transition: $animation;
   }
 
   &__scroll-down {

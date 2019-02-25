@@ -1,5 +1,0 @@
-.trader-info__block:not(:last-child) { position: relative; margin-bottom: 70px; }
-
-.trader-info__block:not(:last-child):after { content: ''; display: block; background: url("../img/line-right.png") left center no-repeat; width: 100%; height: 13px; position: absolute; }
-
-/*# sourceMappingURL=_section-6.css.map */
