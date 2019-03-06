@@ -1,0 +1,33 @@
+.affiliate-program {
+  padding-top: 112px;
+  //display: block;
+  //padding-top: 360px;
+
+
+  &__container {
+    margin-left: 50%;
+    padding-left: 32px;
+    max-width: 780px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url("../img/affiliate-program-table.png") no-repeat;
+      width: 527px;
+      height: 867px;
+
+      top: 50%;
+      right: 100%;
+
+      margin-top: -444px;
+      margin-right: 60px;
+    }
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__list {
+    margin-bottom: 0;
+  }
+}

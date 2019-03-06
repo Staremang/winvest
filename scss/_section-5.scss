@@ -1,50 +1,41 @@
-.section-5 {
-  @if ($dev-mode) {
-    background: url('../img/rm/05.png') center no-repeat;
-    background-size: 100% auto;
-  } @else {
-    //background: url('../img/page-5-bg.jpg') center no-repeat;
-    //background-size: 1920px auto;
+.profit {
+  padding-top: 90px;
+
+
+  &:before {
+    content: '';
+    background: url('../img/page-5-bg-m.png') center no-repeat;
+    background-size: contain;
+    width: 1238px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+
+    //transform: translateZ(0);
+    pointer-events: none;
   }
 
   &__container {
-    padding-left: (300 / 1920 * 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-
-    //background: url('../img/page-5-bg-m.png') 100% 0 no-repeat;
-
-    &:before {
-      content: '';
-      background: url('../img/page-5-bg-m.png') center no-repeat;
-      background-size: contain;
-      width: 1238px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 30%;
-    }
+    width: 100%;
+    max-width: (1920 - $prifit-left * 2);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
-    font-size: 42px;
-    font-family: $font-family-neumann;
     color: white;
-    text-transform: uppercase;
-    line-height: 1.429;
-
     //max-width: 410px;
+    margin-bottom: 2.5rem;
   }
 
-  &__description {
+  &__subtitle {
     color: #888888;
+    margin-bottom: 76px;
+    max-width: 637px;
+
     font-size: 18px;
     line-height: 26px;
-    margin: 2.5rem 0 4rem;
-    max-width: 637px;
   }
 }
 

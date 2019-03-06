@@ -1,229 +1,100 @@
-.section-6 {
-  //display: block;
-  //overflow: hidden;
-  //padding-top: 100px;
-  @if ($dev-mode) {
-    background: url('../img/rm/06_2.png') center no-repeat;
-    background-size: 100% auto;
-  } @else {
-    //background: url('../img/bg.jpg') center no-repeat;
-    //background-size: cover;
+.calculator {
+  padding-top: 78px;
+  //
+  //@if $dev-mode {
+  //  display: block;
+  //  padding-top: 284px;
+  //}
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url("../img/tel.png") no-repeat;
+    width: 508px;
+    height: 768px;
+    right: 14%;
+    top: 22%;
   }
-}
-
-.traders-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  //padding-top: 198px;
-  margin-bottom: 36px;
-  padding-top: 120px;
-
-  &__slogan {
-    font-size: 18px;
-    color: #888888;
-    margin-bottom: 27px;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: '';
-      width: 390px;
-      height: 13px;
-      position: absolute;
-      top: 4px;
-    }
-
-    &::before {
-      background-image: url('../img/quote-decor-line.png');
-      right: 100%;
-      margin-right: 20px;
-    }
-
-    &::after {
-      background-image: url('../img/line-right.png');
-      left: 100%;
-      margin-left: 20px;
-    }
+  &__container {
+    width: 100%;
+    max-width: (1920 - $prifit-left * 2);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {
-    font-family: $font-family-neumann;
-    font-size: 42px;
-    text-transform: uppercase;
-  }
-}
-
-.traders {
-  display: flex;
-  justify-content: space-between;
-  width: 1140px;
-  margin: 0 auto;
-
-  &__list {
-    padding-left: 34px;
-  }
-}
-
-.trader-prev {
-  //margin: 200px;
-  width: 120px;
-  opacity: 0;
-  transition: $animation;
-
-  .viewed & {
-    opacity: 1;
-  }
-
-  &:nth-child(1) {
-    transition-delay: ($delay + $delay-interval * 0);
-  }
-  &:nth-child(2) {
-    transition-delay: ($delay + $delay-interval * 4);
-  }
-  &:nth-child(3) {
-    transition-delay: ($delay + $delay-interval * 8);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 36px;
-  }
-
-  &:hover {
-    .trader-prev__img {
-      > img {
-        box-shadow: 0 0 20px rgba($orange, .25);
-      }
-      &::before {
-        transform: rotate(180deg);
-      }
-    }
-  }
-
-  &__img {
-    width: 120px;
-    height: 120px;
-    display: flex;
-    position: relative;
-
-    > img {
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba($orange, .15);
-      transition: all .3s ease;
-      position: relative;
-    }
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      background: url('../img/border.png') left bottom no-repeat;
-      width: 175px;
-      height: 175px;
-
-      left: -27px;
-      top: -27px;
-
-      transition: all .3s ease;
-    }
-  }
-
-  &__name {
-    text-align: center;
-    font-size: 14px;
     color: white;
-    text-transform: uppercase;
-    margin-top: 19px;
+    //max-width: 410px;
+    margin-bottom: 2.5rem;
   }
-}
 
-.trader-item {
-  position: relative;
-  &__img {
+  &__subtitle {
+    margin-bottom: 4rem;
+    max-width: 637px;
+  }
+  &__stroke {
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
     position: absolute;
 
-    //top: 50%;
-    //transform: translateY(-50%);
-
-    top: 10px;
-    left: -350px;
-    z-index: 1;
-  }
-}
-.trader-info {
-  //margin-left: 973px;
-  //margin-top: 332px;
-  //border: 1px solid $orange;
-
-  width: 550px;
-  //height: 554px;
-  color: #888888;
-  font-size: 18px;
-  position: relative;
-  &__line {
-    height: 1px;
-    //width: 100%;
-    background: $orange;
-    position: relative;
-    margin: 0 12px;
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 9px;
-      height: 9px;
-      border: 1px solid $orange;
-      transform: rotate(45deg);
-      top: -4px;
+    fill: $main-color;
+    &_1 {
+      svg {
+        width: 48px;
+        height: 36px;
+      }
     }
-
-    &::before {
-      left: -16px;
-    }
-
-    &::after {
-      right: -16px;
+    &_2 {
+      svg {
+        width: 42px;
+        height: 42px;
+      }
     }
   }
-  &__container {
-
-    padding: 25px 40px;
-    margin: 11px 0;
-    border-left: 1px solid $orange;
-    border-right: 1px solid $orange;
+  &__text {
+    margin-left: 60px;
   }
-  &__block:not(:last-child) {
-    position: relative;
-    margin-bottom: 76px;
-    &:after {
-      content: '';
-      display: block;
-      background: url('../img/line-right.png') left center no-repeat;
-      width: 100%;
-      height: 13px;
-      position: absolute;
-      bottom: -49px;
-    }
-  }
-
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    &:not(:last-child) {
-      margin-bottom: 26px;
-    }
-  }
-
-  &__name {
-    font-size: 42px;
+  &__value {
+    color: $main-color;
     font-family: $font-family-neumann;
-    color: white;
-  }
 
-  &__val {
-    color: white;
+    font-size: 24px;
+  }
+  @include media-breakpoint-up(lg) {
+    &__stroke {
+      position: relative;
+      display: flex;
+      align-items: center;
+      //height: 60px;
+      margin-bottom: 55px;
+    }
+    &__icon {
+      position: relative;
+      width: 100px;
+      &_1 {
+        svg {
+          width: 71px;
+          height: 61px;
+        }
+      }
+      &_2 {
+        svg {
+          width: 61px;
+          height: 61px;
+        }
+      }
+    }
+    &__text {
+      font-size: 24px;
+      margin-left: 0;
+    }
+    &__value {
+      font-size: 42px;
+      margin-left: 30px;
+    }
   }
 }

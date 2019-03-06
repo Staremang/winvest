@@ -5,15 +5,7 @@ $s1-content-left: (374 / 1920 * 100%);
   transform: translateY(-50%);
 }
 
-.section-1 {
-  @if ($dev-mode) {
-    background: url('../img/rm/01.png') center no-repeat;
-    background-size: 100% auto;
-  } @else {
-    //background: url('../img/page-1-bg.jpg') center no-repeat;
-    //background-size: 1920px auto;
-  }
-
+.hero {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -30,37 +22,28 @@ $s1-content-left: (374 / 1920 * 100%);
     left: 40%;
   }
 
-
-
   &__container {
-    padding-left: $s1-content-left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    max-width: (1920 - $hero-left * 2);
+    margin-left: auto;
+    margin-right: auto;
 
     //background: url("../img/hero-man.png") 75% top no-repeat;
   }
 
   &__title {
-    font-size: 42px;
-    font-family: $font-family-neumann;
     color: white;
-    text-transform: uppercase;
-    line-height: 1.429;
-
-    //max-width: 410px;
+    max-width: 410px;
+    margin-bottom: 2.5rem;
   }
 
   &__description {
     color: #888888;
     font-size: 18px;
     line-height: 26px;
-    margin: 2.5rem 0 3rem;
+
+    margin-bottom: 3rem;
+    max-width: 450px;
   }
 
   &__quote {
