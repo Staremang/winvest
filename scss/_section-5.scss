@@ -1,7 +1,9 @@
 .profit {
   padding-top: 90px;
 
-
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   &:before {
     content: '';
     background: url('../img/page-5-bg-m.png') center no-repeat;

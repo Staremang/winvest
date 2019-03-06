@@ -5,10 +5,13 @@
 
 
   &__container {
-    margin-left: 50%;
-    padding-left: 32px;
-    max-width: 780px;
-    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      margin-left: 50%;
+      padding-left: 32px;
+      max-width: 780px;
+      position: relative;
+    }
 
     &::before {
       content: '';

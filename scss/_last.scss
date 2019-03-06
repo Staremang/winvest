@@ -1,6 +1,11 @@
 .last {
   padding-top: 40px;
-  text-align: center;
+  padding-bottom: 50px;
+
+  @include media-breakpoint-up(lg) {
+    text-align: center;
+    padding-bottom: 0;
+  }
 
   &__container {
     max-width: 720px;

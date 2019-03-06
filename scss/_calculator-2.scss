@@ -4,18 +4,24 @@
   //display: block;
   //padding-top: 260px;
 
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 20px;
 
   position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    background: url("../img/tel.png") no-repeat;
-    width: 508px;
-    height: 768px;
-    right: 14%;
-    top: 22%;
+
+  @include media-breakpoint-up(lg) {
+
+    font-size: 20px;
+    line-height: 26px;
+    &::before {
+      content: '';
+      position: absolute;
+      background: url("../img/tel.png") no-repeat;
+      width: 508px;
+      height: 768px;
+      right: 14%;
+      top: 22%;
+    }
   }
 
   &__title {

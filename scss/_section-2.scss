@@ -7,13 +7,13 @@
 
 .about {
   padding-top: 52px;
-  text-align: center;
+  @include media-breakpoint-up(lg) {
+    text-align: center;
+  }
   &__title {
     margin-bottom: 42px;
   }
   &__subtitle {
-    font-size: 20px;
-    line-height: 1.3;
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
@@ -21,75 +21,90 @@
   }
 }
 
-%square {
-  width: 9px;
-  height: 9px;
-  border: 1px solid #404040;
-  transform: rotate(45deg);
-}
-
 .your-actions {
   text-align: left;
-  display: flex;
-  max-width: (490px * 3);
-  margin-left: auto;
-  margin-right: auto;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    max-width: (490px * 3);
+    margin-left: auto;
+    margin-right: auto;
+  }
   &__col {
     position: relative;
-    flex: 0 0 percentage(1/3);
-    max-width: percentage(1/3);
-    padding: 52px 30px 46px 60px;
+    margin-bottom: 20px;
 
-    &:first-child {
-      &::before {
-        content: '';
-        position: absolute;
-        top: -4px;
-        right: -4px;
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 percentage(1/3);
+      max-width: percentage(1/3);
+      padding: 52px 30px 46px 60px;
+      margin-bottom: 0;
 
-        @extend %square;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 5px;
-        right: 0;
-        width: 1px;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(#404040, 1), rgba(#404040, 0));
-      }
-    }
-    &:last-child {
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: -4px;
+      &:first-child {
+        &::before {
+          content: '';
+          position: absolute;
+          top: -4px;
+          right: -4px;
 
-        @extend %square;
+          width: 9px;
+          height: 9px;
+          border: 1px solid #404040;
+          transform: rotate(45deg);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          right: 0;
+          width: 1px;
+          bottom: 0;
+          background: linear-gradient(to bottom, rgba(#404040, 1), rgba(#404040, 0));
+        }
       }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1px;
-        bottom: 5px;
-        background: linear-gradient(to top, rgba(#404040, 1), rgba(#404040, 0));
+      &:last-child {
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: -4px;
+
+          width: 9px;
+          height: 9px;
+          border: 1px solid #404040;
+          transform: rotate(45deg);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1px;
+          bottom: 5px;
+          background: linear-gradient(to top, rgba(#404040, 1), rgba(#404040, 0));
+        }
       }
     }
   }
   &__item {
     position: relative;
-    padding-left: 100px;
+    padding-left: 65px;
+    @include media-breakpoint-up(lg) {
+      padding-left: 100px;
+    }
   }
   &__icon {
     position: absolute;
     left: 0;
     top: 7px;
     fill: $main-color;
-    width: 69px;
-    height: 69px;
+
+    width: 48px;
+    height: 48px;
+    @include media-breakpoint-up(lg) {
+      width: 69px;
+      height: 69px;
+    }
 
     svg {
       max-width: 100%;
@@ -97,14 +112,24 @@
     }
   }
   &__title {
-    font-size: 24px;
-    margin-bottom: 13px;
-  }
-  &__text {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 13px;
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
     color: #888888;
     margin-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 }
 

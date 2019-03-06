@@ -40,6 +40,7 @@ function initOnePage() {
         sectionContainer: ".section",
         loop: false,
         pagination: false,
+        responsiveFallback: 900,
         beforeMove: function(index) {
             $('.page-number__current').text(('0' + index).slice(-2));
             $('.page-nav').find('[data-index]').removeClass('active');

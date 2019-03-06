@@ -6,14 +6,20 @@
   align-items: center;
   text-align: center;
   //padding-top: 198px;
-  margin-bottom: 36px;
-  padding-top: 120px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 36px;
+    padding-top: 120px;
+  }
 
   &__slogan {
     font-size: 18px;
     color: #888888;
     margin-bottom: 27px;
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
 
     &::before,
     &::after {
@@ -38,17 +44,20 @@
   }
 
   &__title {
-    font-family: $font-family-neumann;
-    font-size: 42px;
-    text-transform: uppercase;
+    //font-family: $font-family-neumann;
+    //font-size: 42px;
+    //text-transform: uppercase;
   }
 }
 
 .traders {
-  display: flex;
-  justify-content: space-between;
-  width: 1140px;
-  margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 0 auto;
+  }
 
   &__list {
     padding-left: 34px;
@@ -57,26 +66,28 @@
 
 .trader-prev {
   //margin: 200px;
-  width: 120px;
-  opacity: 0;
-  transition: $animation;
+  @include media-breakpoint-up(lg) {
+    width: 120px;
+    opacity: 0;
+    transition: $animation;
 
-  .viewed & {
-    opacity: 1;
-  }
+    .viewed & {
+      opacity: 1;
+    }
 
-  &:nth-child(1) {
-    transition-delay: ($delay + $delay-interval * 0);
-  }
-  &:nth-child(2) {
-    transition-delay: ($delay + $delay-interval * 4);
-  }
-  &:nth-child(3) {
-    transition-delay: ($delay + $delay-interval * 8);
-  }
+    &:nth-child(1) {
+      transition-delay: ($delay + $delay-interval * 0);
+    }
+    &:nth-child(2) {
+      transition-delay: ($delay + $delay-interval * 4);
+    }
+    &:nth-child(3) {
+      transition-delay: ($delay + $delay-interval * 8);
+    }
 
-  &:not(:last-child) {
-    margin-bottom: 36px;
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
   }
 
   &:hover {
@@ -145,11 +156,14 @@
   //margin-top: 332px;
   //border: 1px solid $orange;
 
-  width: 550px;
-  //height: 554px;
-  color: #888888;
-  font-size: 18px;
-  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    width: 550px;
+    //height: 554px;
+    color: #888888;
+    font-size: 18px;
+    position: relative;
+  }
   &__line {
     height: 1px;
     //width: 100%;

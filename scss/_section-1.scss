@@ -6,10 +6,15 @@ $s1-content-left: (374 / 1920 * 100%);
 }
 
 .hero {
+  overflow: hidden;
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: both;
+  padding-top: 140px;
 
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+  }
   //background: red;
   &:before {
     content: '';
@@ -39,17 +44,20 @@ $s1-content-left: (374 / 1920 * 100%);
 
   &__description {
     color: #888888;
-    font-size: 18px;
-    line-height: 26px;
+    //font-size: 18px;
+    //line-height: 26px;
 
     margin-bottom: 3rem;
     max-width: 450px;
   }
 
   &__quote {
-    position: absolute;
-    left: (892 / 1920 * 100%);
-    bottom: 68px;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      left: (892 / 1920 * 100%);
+      bottom: 68px;
+    }
 
   }
 }
@@ -64,22 +72,20 @@ $s1-content-left: (374 / 1920 * 100%);
 
   &__text {
     text-align: left;
-    font-size: 20px;
-    line-height: 26px;
-
-    &:first-child {
+    //font-size: 20px;
+    //line-height: 26px;
+    span {
       font-weight: $font-weight-semibold;
-      color: $orange;
+    }
 
-      &::before {
-        content: '';
-        display: inline-block;
-        background: url('../img/icons/quote.svg') center no-repeat;
-        background-size: contain;
-        width: 68px;
-        height: 63px;
-        margin-right: 7px;
-      }
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url('../img/icons/quote.svg') center no-repeat;
+      background-size: contain;
+      width: 68px;
+      height: 63px;
+      margin-right: 7px;
     }
   }
 

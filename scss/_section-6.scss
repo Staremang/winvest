@@ -1,5 +1,6 @@
 .calculator {
   padding-top: 78px;
+  padding-bottom: 70px;
   //
   //@if $dev-mode {
   //  display: block;
@@ -10,10 +11,24 @@
     content: '';
     position: absolute;
     background: url("../img/tel.png") no-repeat;
-    width: 508px;
-    height: 768px;
-    right: 14%;
-    top: 22%;
+    background-size: contain;
+    width: 174px;
+    height: 348px;
+    right: -15%;
+    //top: 22%;
+    bottom: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 0;
+
+    &::before {
+      width: 508px;
+      height: 768px;
+      right: 14%;
+      //top: 22%;
+      bottom: -22%;
+    }
   }
   &__container {
     width: 100%;
@@ -34,12 +49,15 @@
   }
   &__stroke {
     position: relative;
+    margin-bottom: 100px;
     &:last-child {
       margin-bottom: 0;
     }
   }
   &__icon {
     position: absolute;
+    bottom: 100%;
+    margin-bottom: -30px;
 
     fill: $main-color;
     &_1 {
@@ -56,13 +74,15 @@
     }
   }
   &__text {
-    margin-left: 60px;
   }
   &__value {
     color: $main-color;
     font-family: $font-family-neumann;
 
     font-size: 24px;
+    margin-left: 60px;
+
+    //position: absolute;
   }
   @include media-breakpoint-up(lg) {
     &__stroke {
@@ -71,10 +91,17 @@
       align-items: center;
       //height: 60px;
       margin-bottom: 55px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
     &__icon {
+      bottom: auto;
+      margin-bottom: 0;
+
       position: relative;
       width: 100px;
+      order: 1;
       &_1 {
         svg {
           width: 71px;
@@ -91,10 +118,12 @@
     &__text {
       font-size: 24px;
       margin-left: 0;
+      order: 2;
     }
     &__value {
       font-size: 42px;
       margin-left: 30px;
+      order: 3;
     }
   }
 }

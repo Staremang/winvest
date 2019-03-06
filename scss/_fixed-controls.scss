@@ -16,17 +16,31 @@ $viewport-padding: 75px;
   right: 0;
   left: 0;
 
-  height: 160px;
+  height: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-breakpoint-up(lg) {
+    height: 160px;
+
+  }
 
   //display: flex;
   //padding: 75px;
   //align-items: center;
 
   &__logo {
-    left: $viewport-padding;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+    @include media-breakpoint-up(lg) {
+      left: $viewport-padding;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &__btn {
@@ -35,6 +49,10 @@ $viewport-padding: 75px;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all .3s ease-out;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
     //left: 374px;
 
     //.fp-viewing-page1 & {
@@ -43,10 +61,13 @@ $viewport-padding: 75px;
   }
 
   &__menu {
-    right: $viewport-padding;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+    @include media-breakpoint-up(lg) {
+      right: $viewport-padding;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -63,7 +84,10 @@ $viewport-padding: 75px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: $font-weight-medium;
-  padding-right: 54px;
+
+  @include media-breakpoint-up(lg) {
+    padding-right: 54px;
+  }
   //position: relative;
 
   &:hover {
@@ -73,6 +97,7 @@ $viewport-padding: 75px;
       }
     }
   }
+
 
   &.active {
     .menu-btn__icon {
@@ -95,18 +120,29 @@ $viewport-padding: 75px;
     }
   }
 
+  &__text {
+    @include media-breakpoint-down(md) {
+      display: none;
+
+    }
+  }
+
   &__icon {
-    width: 30px;
-    //height: 12px;
-    position: absolute;
     display: inline-block;
-    //display: flex;
-    //flex-direction: column;
-    //align-items: flex-end;
-    //justify-content: center;
-    right: 0;
-    top: 0;
-    height: 100%;
+    width: 30px;
+    height: 12px;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      //display: flex;
+      //flex-direction: column;
+      //align-items: flex-end;
+      //justify-content: center;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
 
     span {
       display: block;
@@ -149,6 +185,10 @@ $viewport-padding: 75px;
   //@media (min-width: @width-lg) {
   //  display: block;
   //}
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   &__link {
     color: #b9b9b9;
     text-decoration: none;
@@ -175,6 +215,9 @@ $viewport-padding: 75px;
   top: 50%;
   transform: translate(-50%, -50%);
 
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   &__item {
     display: block;
     position: relative;
@@ -280,6 +323,9 @@ $viewport-padding: 75px;
 
   font-family: $font-family-neumann;
 
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   &__current {
     color: $orange;
 
