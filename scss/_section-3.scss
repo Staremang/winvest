@@ -11,8 +11,21 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-down(md) {
   .services {
+    padding-top: 24px;
+    padding-bottom: 44px;
+    &__title {
+      margin-bottom: 47px;
+    }
+    &__diagram_d {
+      display: none;
+    }
+  }
+}
+
+.services {
+  @include media-breakpoint-up(lg) {
     //padding-top: 392px;
 
     //&__title {
@@ -25,6 +38,9 @@
     //  text-align: left;
     //  padding-left: 300px;
     //}
+    &__title {
+      display: none;
+    }
 
     &__diagram {
       background: url('../img/services-bg.png') center no-repeat;
@@ -35,6 +51,9 @@
       margin-right: auto;
 
       position: relative;
+      &_m {
+        display: none;
+      }
 
       //&::before {
       //  content: '';
@@ -50,10 +69,70 @@
       //}
     }
   }
+}
 
-  .service {
+.service {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    border: 1px solid $orange;
+    position: relative;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex: none;
+
+    //@include media-breakpoint-down(md) {
+    //  position: absolute;
+    //  left: 0;
+    //  top: 0;
+    //}
+    &::after {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+    }
+
+    &::before {
+      content: '';
+      background: url('../img/service-img-bg.png') center no-repeat;
+      background-size: contain;
+      width: 149px;
+      height: 149px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &:not(:last-child) {
+    margin-bottom: 30px;
+
+    }
+    &__hover {
+
+      margin-left: 21px;
+    }
+    &__text {
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    &__hidden {
+      color: #888888;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
     position: absolute;
 
     top: 50%;
@@ -195,34 +274,9 @@
         left: 24px;
       }
     }
+  }
 
-    &__img {
-      width: 87px;
-      height: 87px;
-      border-radius: 50%;
-      border: 1px solid $orange;
-      position: relative;
-
-      &::after {
-        content: '';
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-      }
-
-      &::before {
-        content: '';
-        background: url('../img/service-img-bg.png') center no-repeat;
-        background-size: contain;
-        width: 149px;
-        height: 149px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
+  @include media-breakpoint-up(lg) {
     &__hover {
       position: absolute;
       top: 50%;
@@ -230,7 +284,7 @@
 
       left: calc(100% + 20px); // Re
     }
-
+    //}
     &__text {
       color: #888888;
       text-transform: uppercase;
@@ -238,6 +292,7 @@
       white-space: nowrap;
     }
 
+    //@include media-breakpoint-up(lg) {
     &__icon {
       position: absolute;
       z-index: 1;

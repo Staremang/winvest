@@ -1,6 +1,11 @@
 .calculator {
-  padding-top: 78px;
-  padding-bottom: 70px;
+  padding-top: 26px;
+  padding-bottom: 105px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 78px;
+    padding-bottom: 70px;
+  }
   //
   //@if $dev-mode {
   //  display: block;
@@ -14,9 +19,8 @@
     background-size: contain;
     width: 174px;
     height: 348px;
-    right: -15%;
-    //top: 22%;
-    bottom: 0;
+    right: -12%;
+    bottom: 45px;
   }
 
   @include media-breakpoint-up(lg) {
@@ -40,16 +44,23 @@
   &__title {
     color: white;
     //max-width: 410px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 18px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__subtitle {
-    margin-bottom: 4rem;
     max-width: 637px;
+    margin-bottom: 78px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 4rem;
+    }
   }
   &__stroke {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 89px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -74,6 +85,7 @@
     }
   }
   &__text {
+    font-size: 18px;
   }
   &__value {
     color: $main-color;

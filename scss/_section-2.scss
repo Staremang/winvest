@@ -6,23 +6,32 @@
 //}
 
 .about {
-  padding-top: 52px;
+  padding-top: 23px;
   @include media-breakpoint-up(lg) {
+    padding-top: 52px;
     text-align: center;
   }
   &__title {
-    margin-bottom: 42px;
+    margin-bottom: 18px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 42px;
+    }
   }
   &__subtitle {
-    max-width: 1020px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 74px;
+    max-width: 290px;
+    margin-bottom: 28px;
+    @include media-breakpoint-up(lg) {
+      max-width: 1020px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 74px;
+    }
   }
 }
 
 .your-actions {
   text-align: left;
+  max-width: 280px;
 
   @include media-breakpoint-up(lg) {
     display: flex;
@@ -32,7 +41,9 @@
   }
   &__col {
     position: relative;
-    margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
 
     @include media-breakpoint-up(lg) {
       flex: 0 0 percentage(1/3);
@@ -114,8 +125,9 @@
   &__title {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 13px;
+    margin-bottom: 6px;
     @include media-breakpoint-up(lg) {
+      margin-bottom: 13px;
       font-size: 24px;
       line-height: 32px;
     }

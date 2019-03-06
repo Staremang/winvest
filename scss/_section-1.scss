@@ -10,7 +10,7 @@ $s1-content-left: (374 / 1920 * 100%);
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: both;
-  padding-top: 140px;
+  padding-top: 114px;
 
   @include media-breakpoint-up(lg) {
     padding-top: 0;
@@ -37,9 +37,13 @@ $s1-content-left: (374 / 1920 * 100%);
   }
 
   &__title {
-    color: white;
-    max-width: 410px;
-    margin-bottom: 2.5rem;
+    //color: white;
+    max-width: 240px;
+    margin-bottom: 19px;
+    @include media-breakpoint-up(lg) {
+      max-width: 410px;
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__description {
@@ -47,13 +51,18 @@ $s1-content-left: (374 / 1920 * 100%);
     //font-size: 18px;
     //line-height: 26px;
 
-    margin-bottom: 3rem;
+
+    margin-bottom: 24px;
     max-width: 450px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__quote {
-
+    margin-top: 50px;
     @include media-breakpoint-up(lg) {
+      margin-top: 0;
       position: absolute;
       left: (892 / 1920 * 100%);
       bottom: 68px;
@@ -83,21 +92,30 @@ $s1-content-left: (374 / 1920 * 100%);
       display: inline-block;
       background: url('../img/icons/quote.svg') center no-repeat;
       background-size: contain;
-      width: 68px;
-      height: 63px;
+      width: 40px;
+      height: 37px;
       margin-right: 7px;
+      @include media-breakpoint-up(lg) {
+        width: 68px;
+        height: 63px;
+      }
     }
   }
 
   &__author {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1;
     text-align: right;
     color: #888888;
-    margin-top: 26px;
     display: inline-block;
     position: relative;
 
+    margin-top: 12px;
+    @include media-breakpoint-up(lg) {
+
+      font-size: 18px;
+      margin-top: 26px;
+    }
     &::before {
       content: '';
       background: url('../img/quote-decor-line.png') center no-repeat;

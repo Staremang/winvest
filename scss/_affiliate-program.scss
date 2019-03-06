@@ -1,5 +1,9 @@
 .affiliate-program {
-  padding-top: 112px;
+  padding-top: 41px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 112px;
+  }
   //display: block;
   //padding-top: 360px;
 
@@ -13,22 +17,37 @@
       position: relative;
     }
 
-    &::before {
+    &::after {
       content: '';
-      position: absolute;
       background: url("../img/affiliate-program-table.png") no-repeat;
-      width: 527px;
-      height: 867px;
+      background-size: contain;
+      width: 323px;
+      height: 557px;
+      margin-top: -54px;
+      margin-bottom: -82px;
+      display: block;
 
-      top: 50%;
-      right: 100%;
+      @include media-breakpoint-up(lg) {
+        width: 527px;
+        height: 867px;
 
-      margin-top: -444px;
-      margin-right: 60px;
+        position: absolute;
+
+        top: 50%;
+        right: 100%;
+
+        margin-top: -444px;
+        margin-right: 60px;
+        margin-bottom: 0;
+      }
     }
   }
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
+    white-space: nowrap;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 32px;
+    }
   }
   &__list {
     margin-bottom: 0;

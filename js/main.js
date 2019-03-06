@@ -61,6 +61,6 @@ function initOnePage() {
 }
 
 $(document).ready(function () {
-    initOnePage();
+    // initOnePage();
     initCollapse();
 });

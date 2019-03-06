@@ -1,12 +1,19 @@
+.section-7 {
 
+  padding-top: 27px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+  }
+}
 
 .traders-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   //padding-top: 198px;
+  margin-bottom: 25px;
   @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 36px;
     padding-top: 120px;
   }
@@ -52,20 +59,29 @@
 
 .traders {
 
+  display: flex;
+  flex-direction: column-reverse;
   @include media-breakpoint-up(lg) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 1140px;
     margin: 0 auto;
   }
 
   &__list {
-    padding-left: 34px;
+    display: flex;
+    margin-top: 33px;
+    @include media-breakpoint-up(lg) {
+      display: block;
+      padding-left: 34px;
+      margin-top: 0;
+    }
   }
 }
 
 .trader-prev {
   //margin: 200px;
+  flex: 0 0 percentage(1/3);
   @include media-breakpoint-up(lg) {
     width: 120px;
     opacity: 0;
@@ -102,16 +118,23 @@
   }
 
   &__img {
-    width: 120px;
-    height: 120px;
-    display: flex;
+    width: 67px;
+    height: 67px;
+    //display: flex;
     position: relative;
 
+    @include media-breakpoint-up(lg) {
+
+      width: 120px;
+      height: 120px;
+    }
     > img {
       border-radius: 50%;
       box-shadow: 0 0 20px rgba($orange, .15);
       transition: all .3s ease;
       position: relative;
+      max-width: 100%;
+      max-height: 100%;
     }
 
     &::before {
@@ -131,10 +154,15 @@
 
   &__name {
     text-align: center;
-    font-size: 14px;
     color: white;
     text-transform: uppercase;
-    margin-top: 19px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 17px;
+    @include media-breakpoint-up(lg) {
+      font-size: 14px;
+      margin-top: 19px;
+    }
   }
 }
 
@@ -192,14 +220,22 @@
   }
   &__container {
 
-    padding: 25px 40px;
+    padding: 13px 15px;
     margin: 11px 0;
     border-left: 1px solid $orange;
     border-right: 1px solid $orange;
+    @include media-breakpoint-up(lg) {
+
+      padding: 25px 40px;
+    }
   }
   &__block:not(:last-child) {
     position: relative;
-    margin-bottom: 76px;
+
+    margin-bottom: 16px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 76px;
+    }
     &:after {
       content: '';
       display: block;
@@ -221,9 +257,14 @@
   }
 
   &__name {
-    font-size: 42px;
+    font-size: 24px;
     font-family: $font-family-neumann;
     color: white;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 42px;
+
+    }
   }
 
   &__val {

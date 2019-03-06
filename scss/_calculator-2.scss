@@ -1,6 +1,6 @@
 .calculator-2 {
 
-  padding-top: 30px;
+  padding-top: 21px;
   //display: block;
   //padding-top: 260px;
 
@@ -11,6 +11,7 @@
 
   @include media-breakpoint-up(lg) {
 
+    padding-top: 30px;
     font-size: 20px;
     line-height: 26px;
     &::before {
@@ -25,7 +26,10 @@
   }
 
   &__title {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 33px;
+    }
   }
   &__container {
 
@@ -37,7 +41,10 @@
   &__list {
     //padding-left: 27px;
     max-width: 650px;
-    margin-bottom: 38px;
+    margin-bottom: 22px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 38px;
+    }
   }
   &__item {
     //margin-bottom: 27px;

@@ -1,14 +1,18 @@
 .faq {
   display: block;
-  padding-top: 60px;
+  padding-top: 36px;
 
   @include media-breakpoint-up(lg) {
     padding-top: 260px;
   }
 
   &__title {
-    text-align: center;
-    margin-bottom: 38px;
+    margin-bottom: 22px;
+    @include media-breakpoint-up(lg) {
+
+      text-align: center;
+      margin-bottom: 38px;
+    }
   }
   &__container {
     max-width: 720px;
@@ -55,7 +59,7 @@ $collapse-header-padding-left: 26px;
     }
   }
   &__header {
-    padding-left: 30px;
+    padding-left: 21px;
     position: relative;
 
     @include media-breakpoint-up(lg) {
@@ -167,6 +171,7 @@ $collapse-header-padding-left: 26px;
     position: relative;
     height: 0;
     transition: height .5s ease 0s;
+    margin-top: 17px;
 
     @include media-breakpoint-up(lg) {
       margin-left: 15px;
@@ -186,12 +191,13 @@ $collapse-header-padding-left: 26px;
 
   }
   &__body {
-    padding: 20px 26px 15px $collapse-header-padding-left;
+    padding: 14px 19px 12px 19px;
     border: 1px solid $main-color;
     font-size: 14px;
     line-height: 20px;
     color: #888888;
     @include media-breakpoint-up(lg) {
+      padding: 20px 26px 15px $collapse-header-padding-left;
       border-left-color: transparent;
       border-bottom-color: transparent;
       font-size: 18px;
