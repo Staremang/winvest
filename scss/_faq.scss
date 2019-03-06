@@ -49,6 +49,8 @@ $collapse-header-padding-left: 26px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
   &__icon {
     width: 31px;
@@ -100,6 +102,8 @@ $collapse-header-padding-left: 26px;
     //padding-left: $collapse-header-padding-left;
     font-size: 24px;
     line-height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
     //&::before {
     //  content: '';
     //  position: absolute;
@@ -144,7 +148,7 @@ $collapse-header-padding-left: 26px;
     }
   }
   &__body {
-    padding: 15px 26px 15px $collapse-header-padding-left;
+    padding: 20px 26px 15px $collapse-header-padding-left;
     border-right: 1px solid $main-color;
     border-bottom: 1px solid $main-color;
 

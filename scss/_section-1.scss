@@ -13,13 +13,13 @@ $s1-content-left: (374 / 1920 * 100%);
   //background: red;
   &:before {
     content: '';
-    background: url("../img/hero-man.png") no-repeat;
+    background: url("../img/hero-man-2.png") no-repeat;
     background-size: contain;
-    width: 869px;
-    height: 892px;
+    width: 689px;
+    height: 756px;
     position: absolute;
     top: 0;
-    left: 40%;
+    left: 44%;
   }
 
   &__container {
