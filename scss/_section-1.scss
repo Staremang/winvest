@@ -20,11 +20,15 @@ $s1-content-left: (374 / 1920 * 100%);
     content: '';
     background: url("../img/hero-man-2.png") no-repeat;
     background-size: contain;
-    width: 689px;
-    height: 756px;
+    width: 689px*0.5;
+    height: 756px*0.5;
     position: absolute;
     top: 0;
     left: 44%;
+    @include media-breakpoint-up(lg) {
+      width: 689px;
+      height: 756px;
+    }
   }
 
   &__container {
@@ -32,6 +36,7 @@ $s1-content-left: (374 / 1920 * 100%);
     max-width: (1920 - $hero-left * 2);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 
     //background: url("../img/hero-man.png") 75% top no-repeat;
   }
@@ -56,6 +61,8 @@ $s1-content-left: (374 / 1920 * 100%);
     max-width: 450px;
     @include media-breakpoint-up(lg) {
       margin-bottom: 3rem;
+      font-size: 18px;
+      line-height: 26px;
     }
   }
 
@@ -78,6 +85,7 @@ $s1-content-left: (374 / 1920 * 100%);
 
 .quote {
   text-align: right;
+  max-width: 710px;
 
   &__text {
     text-align: left;

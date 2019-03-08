@@ -63,4 +63,10 @@ function initOnePage() {
 $(document).ready(function () {
     initOnePage();
     initCollapse();
+
+    $('.menu-btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('.menu').toggleClass('active');
+        $('.social-links').toggleClass('active');
+    })
 });

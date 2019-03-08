@@ -44,7 +44,10 @@ $collapse-header-padding-left: 26px;
   }
   &.active {
     .faq-collapse__icon {
+      transform: scaleX(-1) rotate(135deg);
+      @include media-breakpoint-up(lg) {
         transform: rotate(45deg);
+      }
     //  &::after {
     //    width: $collapse-max-width;
     //  }
@@ -74,10 +77,15 @@ $collapse-header-padding-left: 26px;
 
   &__icon {
     position: absolute;
-    left: 0;
-    width: 6px;
-    height: 6px;
+    left: 0px;
+    top: 12px;
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 10px;
     border: 1px solid $main-color;
+    border-left: 0;
+    border-bottom: 0;
+    transition: transform .3s ease-in-out;
 
     @include media-breakpoint-up(lg) {
       width: 31px;
