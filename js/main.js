@@ -36,22 +36,29 @@ function initOnePage() {
 
     $main = $('.main');
 
-    $main.onepage_scroll({
-        sectionContainer: ".section",
-        loop: false,
-        pagination: false,
-        responsiveFallback: 900,
-        beforeMove: function(index) {
-            $('.page-number__current').text(('0' + index).slice(-2));
-            $('.page-nav').find('[data-index]').removeClass('active');
-            $('.page-nav').find('[data-index=' + index + ']').addClass('active');
 
-            $('[data-index]').removeClass('viewed');
-            for (var i = index; i > 0; i--) {
-                $('[data-index=' + i + ']').addClass('viewed');
-            }
-        }
+    $main.fullpage({
+        // anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+        // sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        // scrollOverflow: true
     });
+
+    // $main.onepage_scroll({
+    //     sectionContainer: ".section",
+    //     loop: false,
+    //     pagination: false,
+    //     responsiveFallback: 900,
+    //     beforeMove: function(index) {
+    //         $('.page-number__current').text(('0' + index).slice(-2));
+    //         $('.page-nav').find('[data-index]').removeClass('active');
+    //         $('.page-nav').find('[data-index=' + index + ']').addClass('active');
+    //
+    //         $('[data-index]').removeClass('viewed');
+    //         for (var i = index; i > 0; i--) {
+    //             $('[data-index=' + i + ']').addClass('viewed');
+    //         }
+    //     }
+    // });
 
     $('.page-nav__item').on('click', function (e) {
         e.preventDefault();

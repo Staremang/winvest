@@ -3,8 +3,8 @@
   padding-bottom: 105px;
 
   @include media-breakpoint-up(lg) {
-    padding-top: 78px;
-    padding-bottom: 70px;
+    padding-top: to-rem(78px);
+    padding-bottom: to-rem(70px);
   }
   //
   //@if $dev-mode {
@@ -27,16 +27,15 @@
     padding-bottom: 0;
 
     &::before {
-      width: 508px;
-      height: 1016px;
-      right: 14%;
-      //top: 22%;
-      bottom: -250px;
+      width: response-width(508px);
+      height: response-width(1016px);
+      right: response-width(310px);
+      top: calc(50vh - #{response-width(290px)});
     }
   }
   &__container {
     width: 100%;
-    max-width: (1920 - $prifit-left * 2);
+    max-width: response-width(1920 - $prifit-left * 2);
     margin-left: auto;
     margin-right: auto;
   }
@@ -102,7 +101,7 @@
       display: flex;
       align-items: center;
       //height: 60px;
-      margin-bottom: 55px;
+      margin-bottom: to-rem(55px);
       &:last-child {
         margin-bottom: 0;
       }
@@ -112,29 +111,29 @@
       margin-bottom: 0;
 
       position: relative;
-      width: 100px;
+      width: to-rem(100px);
       order: 1;
       &_1 {
         svg {
-          width: 71px;
-          height: 61px;
+          width: to-rem(71px);
+          height: to-rem(61px);
         }
       }
       &_2 {
         svg {
-          width: 61px;
-          height: 61px;
+          width: to-rem(61px);
+          height: to-rem(61px);
         }
       }
     }
     &__text {
-      font-size: 24px;
+      @include font-size(24px);
       margin-left: 0;
       order: 2;
     }
     &__value {
-      font-size: 42px;
-      margin-left: 30px;
+      @include font-size(42px);
+      margin-left: to-rem(30px);
       order: 3;
     }
   }

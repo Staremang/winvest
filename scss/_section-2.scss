@@ -8,23 +8,23 @@
 .about {
   padding-top: 23px;
   @include media-breakpoint-up(lg) {
-    padding-top: 52px;
+    padding-top: to-rem(52px);
     text-align: center;
   }
   &__title {
     margin-bottom: 18px;
     @include media-breakpoint-up(lg) {
-      margin-bottom: 42px;
+      margin-bottom: to-rem(42px);
     }
   }
   &__subtitle {
     max-width: 290px;
     margin-bottom: 28px;
     @include media-breakpoint-up(lg) {
-      max-width: 1020px;
+      max-width: response-width(1020px);
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 74px;
+      margin-bottom: to-rem(74px);
     }
   }
 }
@@ -35,7 +35,7 @@
 
   @include media-breakpoint-up(lg) {
     display: flex;
-    max-width: (490px * 3);
+    max-width: response-width(490px * 3);
     margin-left: auto;
     margin-right: auto;
   }
@@ -48,7 +48,7 @@
     @include media-breakpoint-up(lg) {
       flex: 0 0 percentage(1/3);
       max-width: percentage(1/3);
-      padding: 52px 30px 46px 60px;
+      padding: to-rem(52px) to-rem(30px) to-rem(46px) to-rem(60px);
       margin-bottom: 0;
 
       &:first-child {
@@ -101,7 +101,7 @@
     position: relative;
     padding-left: 65px;
     @include media-breakpoint-up(lg) {
-      padding-left: 100px;
+      padding-left: to-rem(100px);
     }
   }
   &__icon {
@@ -113,8 +113,8 @@
     width: 48px;
     height: 48px;
     @include media-breakpoint-up(lg) {
-      width: 69px;
-      height: 69px;
+      width: to-rem(69px);
+      height: to-rem(69px);
     }
 
     svg {
@@ -127,9 +127,9 @@
     line-height: 24px;
     margin-bottom: 6px;
     @include media-breakpoint-up(lg) {
-      margin-bottom: 13px;
-      font-size: 24px;
-      line-height: 32px;
+      margin-bottom: to-rem(13px);
+      @include font-size(24px);
+      line-height: 1.3333;
     }
   }
   &__text {
@@ -139,8 +139,8 @@
     margin-bottom: 0;
 
     @include media-breakpoint-up(lg) {
-      font-size: 18px;
-      line-height: 24px;
+      @include font-size(18px);
+      line-height: 1.3333;
     }
   }
 }

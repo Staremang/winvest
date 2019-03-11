@@ -78,8 +78,8 @@ $viewport-padding: 75px;
   width: 114px;
   height: 31px;
   @include media-breakpoint-up(lg) {
-    width: 158px;
-    height: 42px;
+    width: to-rem(158px);
+    height: to-rem(42px);
   }
 }
 
@@ -90,6 +90,7 @@ $viewport-padding: 75px;
   font-weight: $font-weight-medium;
   transition: margin-right .5s ease;
   @include media-breakpoint-up(lg) {
+    @include font-size(18px);
     padding-right: 54px;
   }
   //position: relative;
@@ -105,7 +106,6 @@ $viewport-padding: 75px;
       }
     }
   }
-
 
   &.active {
     @include media-breakpoint-up(lg) {
@@ -206,8 +206,8 @@ $viewport-padding: 75px;
 
   //display: none;
   @include media-breakpoint-up(lg) {
-  //  display: block;
-    right: $viewport-padding;
+    //  display: block;
+    right: to-rem($viewport-padding);
     margin-right: 0;
     z-index: 60;
   }
@@ -344,8 +344,8 @@ $viewport-padding: 75px;
 .page-number {
   @extend %fixed-block;
 
-  right: $viewport-padding;
-  bottom: $viewport-padding;
+  right: to-rem($viewport-padding);
+  bottom: to-rem($viewport-padding);
 
   font-family: $font-family-neumann;
 
@@ -355,21 +355,19 @@ $viewport-padding: 75px;
   &__current {
     color: $orange;
 
-    font-size: 42px;
+    @include font-size(42px);
   }
 
   &__total {
     color: #888888;
 
-    font-size: 21px;
+    @include font-size(21px);
 
     &::before {
       content: '/';
     }
   }
 }
-
-
 
 .menu {
   position: fixed;
@@ -464,7 +462,6 @@ $viewport-padding: 75px;
       //  opacity: 1;
       //}
     }
-
 
     @include media-breakpoint-up(lg) {
       padding-left: 60px;

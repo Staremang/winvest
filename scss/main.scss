@@ -6,6 +6,37 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function response-width($number, $width: 1920) {
+
+  $number: strip-unit($number);
+
+  @return ($number/$width * 100vw);
+}
+
+@function response-height($number, $height: 960) {
+
+  $number: strip-unit($number);
+
+  @return ($number/$height * 100vh);
+}
+
+@function to-rem($num) {
+  @if unit($num) == 'px' {
+    @return strip-unit($num)/16 * 1rem;
+  }
+}
+
 @mixin button-reset {
   border: 0;
   padding: 0;
@@ -43,7 +74,8 @@ $main-color: #f6c55d;
 @import 'reboot';
 
 //@import 'lib/fullpage';
-@import 'lib/onepage-scroll';
+@import 'vendor/fullpage';
+//@import 'lib/onepage-scroll';
 
 @import 'fonts';
 

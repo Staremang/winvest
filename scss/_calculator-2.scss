@@ -7,43 +7,51 @@
   font-size: 12px;
   line-height: 20px;
 
-  position: relative;
+  //position: relative;
 
   @include media-breakpoint-up(lg) {
 
-    padding-top: 30px;
-    font-size: 20px;
-    line-height: 26px;
+    padding-top: to-rem(30px);
+    @include font-size(20px);
+    line-height: 1.3;
     &::before {
       content: '';
       position: absolute;
       background: url("../img/tel.png") no-repeat;
-      width: 508px;
-      height: 768px;
-      right: 14%;
-      top: 22%;
+      background-size: contain;
+      //width: 508px;
+      //height: 768px;
+      //right: 14%;
+      //top: 22%;
+
+      width: response-width(508px);
+      height: response-width(1016px);
+      right: response-width(310px);
+      top: calc(50vh - #{response-width(290px)});
     }
   }
 
   &__title {
     margin-bottom: 30px;
     @include media-breakpoint-up(lg) {
-      margin-bottom: 33px;
+      margin-bottom: to-rem(33px);
     }
   }
   &__container {
 
     width: 100%;
-    max-width: (1920 - $calculator-2-left * 2);
+    //max-width: (1920 - $calculator-2-left * 2);
+    max-width: response-width(1920 - $calculator-2-left * 2);
     margin-left: auto;
     margin-right: auto;
   }
   &__list {
     //padding-left: 27px;
-    max-width: 650px;
+    //max-width: 650px;
+    max-width: response-width(650px);
     margin-bottom: 22px;
     @include media-breakpoint-up(lg) {
-      margin-bottom: 38px;
+      margin-bottom: to-rem(38px);
     }
   }
   &__item {
@@ -51,7 +59,8 @@
   }
   &__text {
     color: #888888;
-    max-width: 700px;
+    //max-width: 700px;
+    max-width: response-width(700px);
   }
 
 }

@@ -4,26 +4,32 @@
 
   @include media-breakpoint-up(lg) {
     text-align: center;
+    padding-top: to-rem(40px);
     padding-bottom: 0;
   }
 
   &__container {
-    max-width: 720px;
+    //max-width: 720px;
+    max-width: response-width(720px);
     margin-left: auto;
     margin-right: auto;
     width: 100%;
   }
   &__title {
-    max-width: 900px;
+    //max-width: 900px;
+    max-width: response-width(900px);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
+    margin-bottom: to-rem(40px);
   }
   &__subtitle {
-    max-width: 750px;
+    //max-width: 750px;
+    max-width: response-width(750px);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
+    margin-bottom: to-rem(60px);
   }
   //&__
 }

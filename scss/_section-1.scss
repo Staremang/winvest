@@ -33,7 +33,7 @@ $s1-content-left: (374 / 1920 * 100%);
 
   &__container {
     width: 100%;
-    max-width: (1920 - $hero-left * 2);
+    max-width: response-width(1920 - $hero-left * 2);
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -46,7 +46,7 @@ $s1-content-left: (374 / 1920 * 100%);
     max-width: 240px;
     margin-bottom: 19px;
     @include media-breakpoint-up(lg) {
-      max-width: 410px;
+      max-width: response-width(410px);
       margin-bottom: 2.5rem;
     }
   }
@@ -60,9 +60,12 @@ $s1-content-left: (374 / 1920 * 100%);
     margin-bottom: 24px;
     max-width: 450px;
     @include media-breakpoint-up(lg) {
+      max-width: response-width(450px);
       margin-bottom: 3rem;
-      font-size: 18px;
-      line-height: 26px;
+      //font-size: 18px;
+      //line-height: 26px;
+      @include font-size(18px);
+      line-height: 1.444;
     }
   }
 
@@ -71,8 +74,8 @@ $s1-content-left: (374 / 1920 * 100%);
     @include media-breakpoint-up(lg) {
       margin-top: 0;
       position: absolute;
-      left: (892 / 1920 * 100%);
-      bottom: 68px;
+      left: response-width(892px);
+      bottom: 4.25rem;
     }
 
   }
@@ -85,12 +88,18 @@ $s1-content-left: (374 / 1920 * 100%);
 
 .quote {
   text-align: right;
-  max-width: 710px;
+  max-width: response-width(710px);
 
   &__text {
     text-align: left;
     //font-size: 20px;
     //line-height: 26px;
+
+    @include media-breakpoint-up(lg) {
+      @include font-size(20px);
+      line-height: 1.3;
+    }
+
     span {
       font-weight: $font-weight-semibold;
     }
@@ -104,8 +113,8 @@ $s1-content-left: (374 / 1920 * 100%);
       height: 37px;
       margin-right: 7px;
       @include media-breakpoint-up(lg) {
-        width: 68px;
-        height: 63px;
+        width: (68 / 16 * 1rem);
+        height: (63 / 16 * 1rem);
       }
     }
   }
@@ -120,9 +129,8 @@ $s1-content-left: (374 / 1920 * 100%);
 
     margin-top: 12px;
     @include media-breakpoint-up(lg) {
-
-      font-size: 18px;
-      margin-top: 26px;
+      @include font-size(18px);
+      line-height: 1.444;
     }
     &::before {
       content: '';

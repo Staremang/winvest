@@ -9,6 +9,10 @@
   color: $orange;
 }
 
+html {
+  font-size: 16/1920 * 100vw;
+}
+
 body {
   background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
@@ -22,26 +26,26 @@ body {
     background: url("../img/rm/mob-320.png") center top no-repeat;
   }
   @include media-breakpoint-up(lg) {
-    font-size: 20px;
+    @include font-size(20px);
     line-height: 1.3;
   }
 }
 
 .section {
 
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
-  overflow: hidden;
-
-  @include media-breakpoint-up(lg) {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 0;
-  }
+  //position: relative;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  //padding-bottom: 40px;
+  //overflow: hidden;
+  //
+  //@include media-breakpoint-up(lg) {
+  //
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  padding-bottom: 0;
+  //}
 
   @include media-breakpoint-up(lg) {
     @if $dev-mode {
@@ -54,6 +58,8 @@ body {
           } @else {
             background-image: url("../img/rm/#{$i}.png");
           }
+          background-size: 100% auto;
+          background-position: center;
         }
 
         $i: $i - 1;
@@ -61,11 +67,11 @@ body {
     }
   }
 
-  @include media-breakpoint-up(lg) {
-    :not(.onepage-wrapper) & {
-      height: 100vh;
-    }
-  }
+  //@include media-breakpoint-up(lg) {
+  //  :not(.onepage-wrapper) & {
+  //    height: 100vh;
+  //  }
+  //}
   &__container {
   }
 }
@@ -78,8 +84,10 @@ body {
   line-height: 34px;
 
   @include media-breakpoint-up(lg) {
-    font-size: 42px;
-    line-height: 60px;
+    //font-size: 42px;
+    //line-height: 60px;
+    @include font-size(42px);
+    line-height: 1.43;
   }
 
 }
@@ -89,7 +97,8 @@ body {
   line-height: 20px;
 
   @include media-breakpoint-up(lg) {
-    font-size: 20px;
+    //font-size: 20px;
+    @include font-size(20px);
     line-height: 1.3;
   }
 }
@@ -102,7 +111,7 @@ body {
       margin-bottom: 23px;
 
       @include media-breakpoint-up(lg) {
-        margin-bottom: 27px;
+        margin-bottom: to-rem(27px);
       }
     }
     &:before {
@@ -151,9 +160,9 @@ body {
   line-height: 24px;
   padding: 9px 40px 7px;
   @include media-breakpoint-up(lg) {
-    font-size: 18px;
-    line-height: 24px;
-    padding: 18px 37px;
+    @include font-size(18px);
+    line-height: 1.33333;
+    padding: to-rem(18px) to-rem(37px);
   }
 
   &::before {
@@ -242,7 +251,7 @@ body {
     }
   }
 
-  .viewed {
+  .active {
     .fadeInDown {
       animation-name: fadeInDown;
     }

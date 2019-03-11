@@ -77,7 +77,7 @@ $collapse-header-padding-left: 26px;
 
   &__icon {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 12px;
     transform: rotate(-45deg);
     width: 10px;
@@ -94,6 +94,8 @@ $collapse-header-padding-left: 26px;
       border-radius: 50%;
       position: relative;
       transition: transform .5s ease;
+      transform: none;
+      top: 0;
       &::before {
         content: '';
         position: absolute;
@@ -207,9 +209,9 @@ $collapse-header-padding-left: 26px;
     @include media-breakpoint-up(lg) {
       padding: 20px 26px 15px $collapse-header-padding-left;
       border-left-color: transparent;
-      border-bottom-color: transparent;
-      font-size: 18px;
-      line-height: 24px;
+      border-top-color: transparent;
+      @include font-size(18px);
+      line-height: 1.33333;
     }
     //border-right: 1px solid $main-color;
     //border-bottom: 1px solid $main-color;

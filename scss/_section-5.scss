@@ -20,7 +20,7 @@
 
   &__container {
     width: 100%;
-    max-width: (1920 - $prifit-left * 2);
+    max-width: response-width(1920 - $prifit-left * 2);
     margin-left: auto;
     margin-right: auto;
   }
@@ -33,11 +33,11 @@
 
   &__subtitle {
     color: #888888;
-    margin-bottom: 76px;
-    max-width: 637px;
+    margin-bottom: to-rem(76px);
+    max-width: response-width(637px);
 
-    font-size: 18px;
-    line-height: 26px;
+    @include font-size(18px);
+    line-height: 1.444444;
   }
 }
 
@@ -46,8 +46,8 @@
 
   position: relative;
   text-transform: uppercase;
-  font-size: 18px;
-  padding-left: 50px;
+  @include font-size(18px);
+  padding-left: to-rem(50px);
   //outline: none;
 
   &:hover {

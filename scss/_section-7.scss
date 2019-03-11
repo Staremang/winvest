@@ -14,14 +14,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 36px;
-    padding-top: 120px;
+    margin-bottom: to-rem(36px);
+    padding-top: to-rem(120px);
   }
 
   &__slogan {
-    font-size: 18px;
+    @include font-size(18px);
     color: #888888;
-    margin-bottom: 27px;
+    margin-bottom: to-rem(27px);
     position: relative;
 
     @include media-breakpoint-down(md) {
@@ -40,13 +40,13 @@
     &::before {
       background-image: url('../img/quote-decor-line.png');
       right: 100%;
-      margin-right: 20px;
+      margin-right: to-rem(20px);
     }
 
     &::after {
       background-image: url('../img/line-right.png');
       left: 100%;
-      margin-left: 20px;
+      margin-left: to-rem(20px);
     }
   }
 
@@ -64,7 +64,7 @@
   @include media-breakpoint-up(lg) {
     flex-direction: row;
     justify-content: space-between;
-    width: 1140px;
+    width: response-width(1140px);
     margin: 0 auto;
   }
 
@@ -73,7 +73,7 @@
     margin-top: 33px;
     @include media-breakpoint-up(lg) {
       display: block;
-      padding-left: 34px;
+      padding-left: to-rem(34px);
       margin-top: 0;
     }
   }
@@ -83,7 +83,7 @@
   //margin: 200px;
   flex: 0 0 percentage(1/3);
   @include media-breakpoint-up(lg) {
-    width: 120px;
+    width: response-width(120px);
     opacity: 0;
     transition: $animation;
 
@@ -102,7 +102,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 36px;
+      margin-bottom: to-rem(36px);
     }
   }
 
@@ -125,8 +125,8 @@
     text-align: center;
     @include media-breakpoint-up(lg) {
 
-      width: 120px;
-      height: 120px;
+      width: to-rem(120px);
+      height: to-rem(120px);
     }
     > img {
       border-radius: 50%;
@@ -152,10 +152,10 @@
 
       transition: all .3s ease;
       @include media-breakpoint-up(lg) {
-        width: 175px;
-        height: 175px;
-        margin-left: -87px;
-        margin-top: -87px;
+        width: to-rem(175px);
+        height: to-rem(175px);
+        margin-left: to-rem(-87px);
+        margin-top: to-rem(-87px);
       }
     }
   }
@@ -168,8 +168,8 @@
     line-height: 20px;
     margin-top: 17px;
     @include media-breakpoint-up(lg) {
-      font-size: 14px;
-      margin-top: 19px;
+      @include font-size(14px);
+      margin-top: to-rem(19px);
     }
   }
 }
@@ -198,10 +198,10 @@
 
 
   @include media-breakpoint-up(lg) {
-    width: 550px;
+    width: response-width(550px);
     //height: 554px;
     color: #888888;
-    font-size: 18px;
+    @include font-size(18px);
     position: relative;
   }
   &__line {
@@ -238,7 +238,7 @@
     border-right: 1px solid $orange;
     @include media-breakpoint-up(lg) {
 
-      padding: 25px 40px;
+      padding: to-rem(25px) to-rem(40px);
     }
   }
   &__block:not(:last-child) {
@@ -246,16 +246,16 @@
 
     margin-bottom: 16px;
     @include media-breakpoint-up(lg) {
-      margin-bottom: 76px;
+      margin-bottom: to-rem(76px);
     }
     &:after {
       content: '';
       display: block;
       background: url('../img/line-right.png') left center no-repeat;
       width: 100%;
-      height: 13px;
+      height: to-rem(13px);
       position: absolute;
-      bottom: -49px;
+      bottom: to-rem(-49px);
     }
   }
 
@@ -264,7 +264,7 @@
     justify-content: space-between;
     align-items: baseline;
     &:not(:last-child) {
-      margin-bottom: 26px;
+      margin-bottom: to-rem(26px);
     }
   }
 
@@ -274,7 +274,7 @@
     color: white;
 
     @include media-breakpoint-up(lg) {
-      font-size: 42px;
+      @include font-size(42px);
 
     }
   }

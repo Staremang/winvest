@@ -2,7 +2,7 @@
   padding-top: 41px;
 
   @include media-breakpoint-up(lg) {
-    padding-top: 112px;
+    padding-top: to-rem(112px);
   }
   //display: block;
   //padding-top: 360px;
@@ -12,8 +12,8 @@
 
     @include media-breakpoint-up(lg) {
       margin-left: 50%;
-      padding-left: 32px;
-      max-width: 780px;
+      padding-left: to-rem(32px);
+      max-width: response-width(780px);
       position: relative;
     }
 
@@ -28,16 +28,16 @@
       display: block;
 
       @include media-breakpoint-up(lg) {
-        width: 527px;
-        height: 867px;
+        width: to-rem(527px);
+        height: to-rem(867px);
 
         position: absolute;
 
         top: 50%;
         right: 100%;
 
-        margin-top: -444px;
-        margin-right: 60px;
+        margin-top: to-rem(-444px);
+        margin-right: to-rem(60px);
         margin-bottom: 0;
       }
     }
@@ -46,10 +46,11 @@
     margin-bottom: 18px;
     white-space: nowrap;
     @include media-breakpoint-up(lg) {
-      margin-bottom: 32px;
+      margin-bottom: to-rem(32px);
     }
   }
   &__list {
     margin-bottom: 0;
+    //@include font-size(20px);
   }
 }

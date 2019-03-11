@@ -141,7 +141,7 @@
     opacity: 0;
     transition: $animation;
 
-    .viewed & {
+    .active & {
       opacity: 1;
     }
 
@@ -347,16 +347,16 @@
     }
 
     &__hidden {
-      width: 315px;
+      width: to-rem(315px);
       position: absolute;
       border: 1px solid $orange;
       background: rgba(black, .6);
 
       transform: scale(0);
       transition: $animation;
-      font-size: 18/16rem;
-      line-height: 24/16rem;
-      padding: 15px 28px;
+      @include font-size(18px);
+      line-height: 1.33333;
+      padding: to-rem(15px) to-rem(28px);
 
       top: 50%;
 
