@@ -6,10 +6,10 @@ $s1-content-left: (374 / 1920 * 100%);
 }
 
 .hero {
-  overflow: hidden;
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  //overflow: hidden;
+  //animation-name: fadeIn;
+  //animation-duration: 1s;
+  //animation-fill-mode: both;
   padding-top: 114px;
 
   @include media-breakpoint-up(lg) {

@@ -52,7 +52,7 @@ function initOnePage() {
         // sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
         // scrollOverflow: true
 
-        afterLoad: function(origin, destination, direction){
+        afterLoad: function (origin, destination, direction) {
             $('.page-number__current').text(('0' + destination).slice(-2));
         },
         // onLeave: function(origin, destination, direction){
@@ -88,7 +88,7 @@ $(document).ready(function () {
     initOnePage();
     initCollapse();
 
-    $('.menu-btn').on('click', function () {
+    $('.menu-btn, .menu__link').on('click', function () {
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
         $('.social-links').toggleClass('active');
