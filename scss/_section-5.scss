@@ -1,5 +1,9 @@
 .profit {
-  padding-top: 90px;
+  padding-top: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 90px;
+
+  }
 
   //@include media-breakpoint-down(md) {
   //  display: none;
@@ -30,6 +34,7 @@
   &__title {
     color: white;
     //max-width: 410px;
+    //margin-bottom: 20px;
     margin-bottom: 2.5rem;
   }
 
@@ -37,6 +42,7 @@
     color: #888888;
 
     line-height: 1.444444;
+    margin-bottom: 20px;
     @include media-breakpoint-up(lg) {
       margin-bottom: to-rem(76px);
       max-width: response-width(637px);

@@ -10,13 +10,14 @@
 }
 
 html {
-  font-size: 16/1920 * 100vw;
+  font-size: 16px;
+  @include media-breakpoint-up(lg) {
+    font-size: 16/1920 * 100vw;
+  }
 }
 
 body {
-  background-image: url('../img/bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: black url('../img/bg.jpg') no-repeat fixed center;
   background-size: 100% 100%;
 
   font-size: 14px;
