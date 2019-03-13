@@ -47,6 +47,7 @@ function initOnePage() {
         // paddingBottom: '0',
         responsiveWidth: 992,
         normalScrollElements: '.menu',
+        bigSectionsDestination: 'top',
         // responsiveHeight: 0,
         // anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
         // sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
@@ -89,7 +90,8 @@ $(document).ready(function () {
     initCollapse();
 
     $('.menu-btn, .menu__link').on('click', function () {
-        $(this).toggleClass('active');
+        $('.menu-btn').toggleClass('active');
+        // $('.menu__link')
         $('.menu').toggleClass('active');
         $('.social-links').toggleClass('active');
     });
