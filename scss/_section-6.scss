@@ -54,9 +54,9 @@
   }
 
   &__subtitle {
-    max-width: 637px;
     margin-bottom: 78px;
     @include media-breakpoint-up(lg) {
+      max-width: response-width(637px);
       margin-bottom: 4rem;
     }
   }

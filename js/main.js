@@ -1,7 +1,7 @@
 function initCollapse() {
     var showed = false;
 
-    $('.faq-collapse__title').on('click', function () {
+    $('.faq-collapse__title, .faq-collapse__icon').on('click', function () {
         toggleCollapse($(this).parents('.faq-collapse'));
     });
 
@@ -32,10 +32,10 @@ function initCollapse() {
 
 function initOnePage() {
 
-    $('.section-1').addClass('viewed');
+    // $('.section-1').addClass('viewed');
     // $('.header').addClass('animate');
 
-    $main = $('.main');
+    let $main = $('.main');
 
 
     $main.fullpage({

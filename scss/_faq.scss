@@ -2,16 +2,16 @@
   display: block;
   padding-top: 36px;
 
-  @include media-breakpoint-up(lg) {
-    padding-top: 260px;
-  }
+  //@include media-breakpoint-up(lg) {
+  //  padding-top: 260px;
+  //}
 
   &__title {
     margin-bottom: 22px;
     @include media-breakpoint-up(lg) {
 
       text-align: center;
-      margin-bottom: 38px;
+      margin-bottom: to-rem(38px);
     }
   }
   &__container {
@@ -22,7 +22,7 @@
 
   @include media-breakpoint-up(lg) {
     &__collapse {
-      padding-left: 35px;
+      padding-left: to-rem(35px);
     }
   }
 
@@ -86,6 +86,7 @@ $collapse-header-padding-left: 26px;
     border-left: 0;
     border-bottom: 0;
     transition: transform .3s ease-in-out;
+    cursor: pointer;
 
     @include media-breakpoint-up(lg) {
       width: 31px;

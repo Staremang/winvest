@@ -373,6 +373,7 @@ $viewport-padding: 75px;
     transform: translateX(-100%);
     visibility: hidden;
     transition: $animation;
+    white-space: nowrap;
 
   }
 
