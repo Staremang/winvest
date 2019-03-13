@@ -6,11 +6,12 @@ function initCollapse() {
     });
 
     function showCollapse($collapse) {
-        $collapse.find('.faq-collapse__container').outerHeight($collapse.find('.faq-collapse__body').outerHeight())
+        $collapse.find('.faq-collapse__container').outerHeight($collapse.find('.faq-collapse__body').outerHeight());
         $collapse.addClass('active');
 
         showed = true;
     }
+
     function hideCollapse($collapse) {
 
         $collapse.find('.faq-collapse__container').outerHeight(0);
@@ -20,7 +21,7 @@ function initCollapse() {
     }
 
     function toggleCollapse($collapse) {
-        if ($collapse.hasClass('active')) {
+        if ( $collapse.hasClass('active') ) {
             hideCollapse($collapse);
         } else {
             hideCollapse($('.faq-collapse.active'));
@@ -38,9 +39,25 @@ function initOnePage() {
 
 
     $main.fullpage({
+        menu: '.page-nav, .menu',
+        // autoScrolling: false,
+        // verticalCentered: false,
+        recordHistory: false,
+        // paddingTop: '0',
+        // paddingBottom: '0',
+        responsiveWidth: 992,
+        normalScrollElements: '.menu',
+        // responsiveHeight: 0,
         // anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
         // sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
         // scrollOverflow: true
+
+        afterLoad: function(origin, destination, direction){
+            $('.page-number__current').text(('0' + destination).slice(-2));
+        },
+        // onLeave: function(origin, destination, direction){
+        //     $('.page-number__current').text(('0' + destination).slice(-2));
+        // }
     });
 
     // $main.onepage_scroll({
@@ -60,11 +77,11 @@ function initOnePage() {
     //     }
     // });
 
-    $('.page-nav__item').on('click', function (e) {
-        e.preventDefault();
-
-        $main.moveTo($(this).data('index'));
-    })
+    // $('.page-nav__item').on('click', function (e) {
+    //     e.preventDefault();
+    //
+    //     $main.moveTo($(this).data('index'));
+    // });
 }
 
 $(document).ready(function () {
@@ -75,5 +92,5 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
         $('.social-links').toggleClass('active');
-    })
+    });
 });

@@ -87,7 +87,7 @@
     opacity: 0;
     transition: $animation;
 
-    .viewed & {
+    .active & {
       opacity: 1;
     }
 

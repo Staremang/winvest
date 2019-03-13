@@ -37,20 +37,23 @@
       margin-bottom: to-rem(33px);
     }
   }
-  &__container {
 
-    width: 100%;
-    //max-width: (1920 - $calculator-2-left * 2);
-    max-width: response-width(1920 - $calculator-2-left * 2);
-    margin-left: auto;
-    margin-right: auto;
+  @include media-breakpoint-up(lg) {
+    &__container {
+
+      width: 100%;
+      //max-width: (1920 - $calculator-2-left * 2);
+      max-width: response-width(1920 - $calculator-2-left * 2);
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__list {
     //padding-left: 27px;
     //max-width: 650px;
-    max-width: response-width(650px);
     margin-bottom: 22px;
     @include media-breakpoint-up(lg) {
+      max-width: response-width(650px);
       margin-bottom: to-rem(38px);
     }
   }
@@ -60,7 +63,9 @@
   &__text {
     color: #888888;
     //max-width: 700px;
-    max-width: response-width(700px);
+    @include media-breakpoint-up(lg) {
+      max-width: response-width(700px);
+    }
   }
 
 }

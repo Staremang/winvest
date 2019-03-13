@@ -20,6 +20,7 @@
   &__subtitle {
     max-width: 290px;
     margin-bottom: 28px;
+    //animation-delay: $delay + .2s;
     @include media-breakpoint-up(lg) {
       max-width: response-width(1020px);
       margin-left: auto;
@@ -33,6 +34,7 @@
   text-align: left;
   max-width: 280px;
 
+  //animation-delay: $delay + .4s;
   @include media-breakpoint-up(lg) {
     display: flex;
     max-width: response-width(490px * 3);

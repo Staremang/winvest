@@ -23,6 +23,7 @@ $viewport-padding: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
 
   @include media-breakpoint-up(lg) {
     height: 160px;
@@ -244,53 +245,110 @@ $viewport-padding: 75px;
   @include media-breakpoint-down(md) {
     display: none;
   }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
   &__item {
+    position: relative;
+    //flex: 1 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+
+    &:not(:first-child) {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 1px;
+        background: $main-color;
+        //opacity: 0.2;
+        //height: 50px;
+        //bottom: 15px;
+        transition: $animation;
+
+        top: -7px;
+        bottom: 23px;
+      }
+    }
+
+    &.active {
+      //.page-nav__link {
+      //
+      //}
+
+      .page-nav__name {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
+      ~ .page-nav__item {
+
+        &::before {
+          opacity: 0.2;
+        }
+
+        .page-nav__link {
+          &::after {
+            opacity: 0.34;
+            transform: rotate(45deg);
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  &__link {
     display: block;
     position: relative;
 
     width: 30px;
     height: 30px;
     padding: 9px;
-    margin-bottom: 27px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      width: 1px;
-      background: $main-color;
-      opacity: 0.2;
-      height: 50px;
-      bottom: 15px;
-      transition: $animation;
-    }
+    //margin-bottom: 27px;
 
     &::after {
       content: '';
       position: absolute;
       width: 12px;
       height: 12px;
-      transform: rotate(45deg);
+      //transform: rotate(45deg);
 
       border: 1px solid $main-color;
       background-color: #111114;
-      opacity: 0.34;
+      //opacity: 0.34;
       transition: $animation;
+
+      transform: rotate(45deg) scale(1.2);
+      box-shadow: 0 0 16px 6px rgba($main-color, 0.25);
     }
 
-    &.viewed {
-      &::after {
-        transform: rotate(45deg) scale(1.2);
-        opacity: 1;
-        box-shadow: 0 0 16px 6px rgba($main-color, 0.25);
-      }
-
-      &::before {
-        opacity: 1;
-      }
-    }
-
-    &.active {
+    //&.active {
+    //  &::after {
+    //    transform: rotate(45deg) scale(1.2);
+    //    box-shadow: 0 0 16px 6px rgba($main-color, 0.25);
+    //    opacity: 1;
+    //  }
+    //
+    //  &::before {
+    //    opacity: 1;
+    //  }
+    //}
+    //
+    //&.active {
+    //  .page-nav__name {
+    //    opacity: 1;
+    //    visibility: visible;
+    //    transform: translateX(0);
+    //  }
+    //}
+    &:hover {
       .page-nav__name {
         opacity: 1;
         visibility: visible;
@@ -314,6 +372,7 @@ $viewport-padding: 75px;
     transform: translateX(-100%);
     visibility: hidden;
     transition: $animation;
+
   }
 
   &__scroll-down {
@@ -418,67 +477,78 @@ $viewport-padding: 75px;
     font-size: 24px;
     color: #888888;
     text-transform: uppercase;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      width: 1px;
+      background: $main-color;
+      height: 48px;
+      top: -30px;
+      transition: $animation;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
     &:not(:last-child) {
       margin-bottom: 21px;
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 10px;
-        width: 1px;
-        background: $main-color;
-        opacity: 0.2;
-        height: 44px;
-        top: 25px;
-        transition: $animation;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 11px;
-      height: 11px;
-      transform: rotate(45deg);
-
-      border: 1px solid $main-color;
-      background-color: #111114;
-      opacity: 0.34;
-      transition: $animation;
-
-      left: 5px;
-      top: 13px;
     }
 
     &.active {
       color: white;
-      &::after {
-        transform: rotate(45deg) scale(1.5);
-        opacity: 1;
-        box-shadow: 0 0 16px 6px rgba($main-color, 0.25);
+      //  &::before {
+      //    transform: rotate(45deg) scale(1.5);
+      //    opacity: 1;
+      //    box-shadow: 0 0 16px 6px rgba($main-color, 0.25);
+      //  }
+      //
+      //  //&::before {
+      //  //  opacity: 1;
+      //  //}
+
+      ~ .menu__item {
+
+        &::before {
+          opacity: 0.2;
+          top: -32px;
+        }
+
+        .menu__link {
+          &::before {
+            opacity: 0.34;
+            transform: rotate(45deg);
+            box-shadow: none;
+          }
+        }
       }
 
-      //&::before {
-      //  opacity: 1;
-      //}
+      @include media-breakpoint-up(lg) {
+        color: $main-color;
+      }
     }
 
     @include media-breakpoint-up(lg) {
       padding-left: 60px;
-      font-size: 30px;
+      @include font-size(30px);
       color: white;
+      &::before {
+        display: none;
+      }
+      &::after {
+        counter-increment: section;
+        content: "0" counter(section);
+        font-family: $font-family-neumann;
+        @include font-size(21px);
+        position: absolute;
+        left: 0;
+        color: #888888;
+        top: 7px;
+      }
       &:nth-child(n+10) {
-        &::before {
-          counter-increment: section;
-          content: "0" counter(section);
-          font-family: $font-family-neumann;
-          font-size: 21px;
-          position: absolute;
-          left: 0;
-          color: #888888;
-          top: 7px;
-        }
-        &::before {
+        &::after {
           content: counter(section);
         }
       }
@@ -492,6 +562,31 @@ $viewport-padding: 75px;
     &:hover {
       color: #f6c55d;
       text-decoration: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      //transform: rotate(45deg);
+
+      border: 1px solid $main-color;
+      background-color: #111114;
+      //opacity: 0.34;
+      transition: $animation;
+
+      left: 5px;
+      top: 13px;
+
+      transform: rotate(45deg) scale(1.5);
+      opacity: 1;
+      box-shadow: 0 0 16px 6px rgba($main-color, 0.25);
+    }
+
+    @include media-breakpoint-up(lg) {
+      &::before {
+        display: none;
+      }
     }
   }
 }
