@@ -36,7 +36,7 @@ function initOnePage() {
     e.preventDefault();
 
     $('[data-trader]').removeClass('active');
-    console.log($(this).data('trader'));
+    // console.log($(this).data('trader'));
     $('[data-trader="' + $(this).data('trader') + '"]').addClass('active');
   });
 
