@@ -243,6 +243,9 @@ body {
       transform: translate(5px, 5px);
     }
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 //.animate {
