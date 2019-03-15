@@ -101,8 +101,11 @@
     line-height: 24px;
 
     @include media-breakpoint-up(lg) {
-      @include font-size(24);
+      @include font-size(22);
       line-height: 1.25;
     }
+  }
+  &__count {
+    color: $main-color;
   }
 }
