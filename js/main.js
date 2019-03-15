@@ -56,6 +56,9 @@ function initOnePage() {
         afterLoad: function (origin, destination, direction) {
             $('.page-number__current').text(('0' + destination).slice(-2));
         },
+        afterRender: function () {
+            $('.loader').fadeOut();
+        }
         // onLeave: function(origin, destination, direction){
         //     $('.page-number__current').text(('0' + destination).slice(-2));
         // }

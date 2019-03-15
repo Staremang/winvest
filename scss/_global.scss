@@ -32,6 +32,39 @@ body {
   }
 }
 
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__logo {
+    width: 339px*0.5;
+    height: 91px*0.5;
+  }
+  &__title {
+    color: $main-color;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    &__logo {
+      width: 339px;
+      height: 91px;
+    }
+    &__title {
+      font-size: 40px;
+      margin-top: 40px;
+    }
+  }
+}
+
 .section {
 
   position: relative;
@@ -54,10 +87,10 @@ body {
   //overflow: hidden;
   //
   @include media-breakpoint-up(lg) {
-  //
-  //  display: flex;
-  //  flex-direction: column;
-  //  justify-content: center;
+    //
+    //  display: flex;
+    //  flex-direction: column;
+    //  justify-content: center;
     padding-bottom: 0;
     &::after {
       display: none;
