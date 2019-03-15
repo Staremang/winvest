@@ -64,6 +64,7 @@
   @include media-breakpoint-up(lg) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
     width: response-width(1140px);
     margin: 0 auto;
   }
@@ -71,23 +72,70 @@
   &__list {
     display: flex;
     margin-top: 33px;
+    position: relative;
+    //align-items: center;
+    justify-content: center;
     @include media-breakpoint-up(lg) {
-      display: block;
-      padding-left: to-rem(34px);
+      //display: block;
+      //padding-left: to-rem(34px);
       margin-top: 0;
+      //width: ;
+    }
+  }
+  &__img {
+    position: absolute;
+    display: none;
+  }
+  &__info {
+  }
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    &__list {
+      //width: 120px;
+      //width: response-width(120px);
+      flex-direction: column;
+      //justify-content: center;
+      z-index: 1;
+    }
+    &__img {
+      display: block;
+      //display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+    &__info {
+      z-index: 1;
+      flex: 0 0 50%;
+      //width: 550px;
+      //width: response-width(550px);
     }
   }
 }
 
 .trader-prev {
   cursor: pointer;
+
+  &.active {
+    display: none;
+    //display: block;
+  }
   //margin: 200px;
-  flex: 0 0 percentage(1/3);
+  //flex: 0 0 percentage(1/3);
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 18px;
   @include media-breakpoint-up(lg) {
-    width: response-width(120px);
+    width: 100%;
+    //width: response-width(120px);
     //opacity: 0;
     //transition: $animation;
 
@@ -104,10 +152,7 @@
     //&:nth-child(3) {
     //  transition-delay: ($delay + $delay-interval * 8);
     //}
-
-    &:not(:last-child) {
-      margin-bottom: to-rem(36px);
-    }
+    margin: to-rem(18px) 0;
   }
 
   &:hover {
@@ -129,6 +174,7 @@
     position: relative;
     text-align: center;
     @include media-breakpoint-up(lg) {
+
 
       width: to-rem(120px);
       height: to-rem(120px);
@@ -165,6 +211,7 @@
       //margin-left: -49px;
       //margin-top: -49px;
       transform: translate(-50%, -50%);
+      pointer-events: none;
 
       transition: all .3s ease;
       @include media-breakpoint-up(lg) {
@@ -190,35 +237,65 @@
   }
 }
 
-.trader-item {
-  position: relative;
-  &__img {
-    position: absolute;
+.trader-photo {
+  display: none;
+  &.active {
+    display: block;
+  }
 
-    //top: 50%;
-    //transform: translateY(-50%);
-
-    top: 10px;
-    left: -350px;
-    z-index: 1;
-    display: none;
-    @include media-breakpoint-up(lg) {
-      display: block;
-    }
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  &_1 {
+    width: 492px;
+    height: 552px;
+    transform: translate(-50%, -50%);
+  }
+  &_2 {
+    width: 483px;
+    height: 568px;
+    transform: translate(-50%, -50%);
+  }
+  &_3 {
+    width: 483px;
+    height: 678px;
+    transform: translate(-50%, -50%);
   }
 }
+
+//.trader-item {
+//  position: relative;
+//  &__img {
+//    position: absolute;
+//
+//    //top: 50%;
+//    //transform: translateY(-50%);
+//
+//    top: 10px;
+//    left: -350px;
+//    z-index: 1;
+//    display: none;
+//    @include media-breakpoint-up(lg) {
+//      display: block;
+//    }
+//  }
+//}
 .trader-info {
   //margin-left: 973px;
   //margin-top: 332px;
   //border: 1px solid $orange;
+  display: none;
+  &.active {
+    display: block;
+  }
 
 
   @include media-breakpoint-up(lg) {
-    width: response-width(550px);
     //height: 554px;
     color: #888888;
     @include font-size(18px);
     position: relative;
+    //width: 100%;
   }
   &__line {
     height: 1px;
