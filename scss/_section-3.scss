@@ -1,56 +1,39 @@
-.section-3 {
-  //display: block;
-  //overflow: hidden;
-  //padding-top: 100px;
-  @if ($dev-mode) {
-    background: url('../img/rm/03.png') center no-repeat;
-    background-size: 100% auto;
-  } @else {
-    //background: url('../img/bg.jpg') center no-repeat;
-    //background-size: cover;
-  }
-}
 
-@include media-breakpoint-down(md) {
-  .services {
-    padding-top: 24px;
-    padding-bottom: 44px;
+.services {
+  @include media-breakpoint-down(sm) {
+    padding-top: 56px;
+    padding-bottom: 41px;
+
     &__title {
-      margin-bottom: 47px;
+      margin-bottom: 34px;
+      padding-left: 102px;
     }
+
     &__diagram_d {
       display: none;
     }
   }
-}
+  @include media-breakpoint-up(md) {
+    height: 607px;
+    //padding-top: 77px;
 
-.services {
-  @include media-breakpoint-up(lg) {
-    //padding-top: 392px;
-
-    //&__title {
-    //  font-size: 32px;
-    //  font-family: $font-family-neumann;
-    //  color: white;
-    //  text-transform: uppercase;
-    //  //text-align: center;
-    //  margin-bottom: 50px;
-    //  text-align: left;
-    //  padding-left: 300px;
-    //}
     &__title {
       display: none;
     }
 
     &__diagram {
-      background: url('../img/services-bg.png') center no-repeat;
-      //background-size: auto;
-      height: 580px;
-      width: 920px;
-      margin-left: auto;
-      margin-right: auto;
-
+      transform: scale(0.8);
       position: relative;
+      //background-size: auto;
+      width: 100%;
+      height: 100%;
+      //width: 920px;
+      //height: 580px;
+      margin-right: auto;
+      margin-left: auto;
+
+      background: url('../img/services-bg.png') center no-repeat;
+
       &_m {
         display: none;
       }
@@ -69,24 +52,34 @@
       //}
     }
   }
+  @include media-breakpoint-up(xl) {
+    height: 733px;
+    //padding-top: 77px;
+
+    &__diagram {
+      transform: none;
+      //width: 920px;
+      //height: 580px;
+    }
+  }
 }
 
 .service {
-  position: relative;
   display: flex;
-  align-items: center;
+  position: relative;
+  align-items: flex-start;
 
   &__img {
-    width: 87px;
-    height: 87px;
-    border-radius: 50%;
-    border: 1px solid $orange;
-    position: relative;
-
     display: flex;
+    position: relative;
+    flex: none;
     align-items: center;
     justify-content: center;
-    flex: none;
+
+    width: 87px;
+    height: 87px;
+    border: 1px solid #fff;
+    border-radius: 50%;
 
     //@include media-breakpoint-down(md) {
     //  position: absolute;
@@ -95,51 +88,42 @@
     //}
     &::after {
       content: '';
+      position: absolute;
       background-repeat: no-repeat;
       background-size: contain;
-      position: absolute;
-    }
-
-    &::before {
-      content: '';
-      background: url('../img/service-img-bg.png') center no-repeat;
-      background-size: contain;
-      width: 149px;
-      height: 149px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
   }
 
   @include media-breakpoint-down(md) {
     &:not(:last-child) {
-    margin-bottom: 30px;
-
+      margin-bottom: 26px;
     }
     &__hover {
-
-      margin-left: 21px;
+      margin-left: 16px;
+      padding-top: 3px;
     }
     &__text {
-      text-transform: uppercase;
-      margin-bottom: 4px;
+      margin-bottom: 10px;
+      font-family: $font-family-museo;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
     }
     &__hidden {
-      color: #888888;
+      //color: #888;
       font-size: 14px;
       line-height: 20px;
     }
   }
-  @include media-breakpoint-up(lg) {
-    position: absolute;
 
+  @include media-breakpoint-up(md) {
+    position: absolute;
     top: 50%;
     left: 50%;
+    align-items: center;
 
-    opacity: 0;
-    transition: $animation;
+    //transition: $animation;
+    //opacity: 0;
 
     .active & {
       opacity: 1;
@@ -148,179 +132,179 @@
     &_reverse {
       .service {
         &__icon {
-          left: auto;
           right: calc(100% + 11px); // Re
+          left: auto;
         }
 
         &__hover {
-          left: auto;
           right: calc(100% + 20px); // Re
+          left: auto;
         }
 
         &__hidden {
-          left: auto;
           right: calc(100% + 26px);
+          left: auto;
           transform-origin: right top;
         }
       }
     }
 
     &_signal {
-      transform: translate(137px, -218px);
       z-index: 3;
+      transform: translate(137px, -218px);
       transition-delay: ($delay + $delay-interval * 0);
 
       .service__img::after {
-        background-image: url('../img/signal-icon.png');
+        top: 22px;
+        left: 22px;
         width: 42px;
         height: 48px;
-        left: 22px;
-        top: 22px;
+        background-image: url('../img/signal-icon.png');
       }
     }
 
     &_livecopy {
-      transform: translate(195px, -12px);
       z-index: 2;
+      transform: translate(195px, -12px);
       transition-delay: ($delay + $delay-interval * 1);
 
       .service__img::after {
-        background-image: url('../img/livecopy.png');
+        top: 23px;
+        left: 21px;
         width: 45px;
         height: 43px;
-        left: 21px;
-        top: 23px;
+        background-image: url('../img/livecopy.png');
       }
     }
 
     &_individual {
-      transform: translate(88px, 163px);
       z-index: 1;
+      transform: translate(88px, 163px);
       transition-delay: ($delay + $delay-interval * 2);
 
       .service__img::after {
-        background-image: url('../img/diagram.png');
+        top: 21px;
+        left: 24px;
         width: 38px;
         height: 43px;
-        left: 24px;
-        top: 21px;
+        background-image: url('../img/diagram.png');
       }
 
       .service__hidden {
-        transform-origin: left bottom;
-        bottom: 50%;
         top: auto;
+        bottom: 50%;
+        transform-origin: left bottom;
       }
     }
 
     &_hedge-fund {
-      transform: translate(-132px, 187px);
       z-index: 4;
+      transform: translate(-132px, 187px);
       transition-delay: ($delay + $delay-interval * 3);
 
       .service__img::after {
-        background-image: url('../img/home.png');
-        width: 40px;
-        height: 34px;
         top: 25px;
         left: 24px;
+        width: 40px;
+        height: 34px;
+        background-image: url('../img/home.png');
       }
 
       .service__hidden {
-        transform-origin: right bottom;
-        bottom: 50%;
         top: auto;
+        bottom: 50%;
+        transform-origin: right bottom;
       }
     }
 
     &_algotrading {
-      transform: translate(-280px, 37px);
       z-index: 1;
+      transform: translate(-280px, 37px);
       transition-delay: ($delay + $delay-interval * 4);
 
       .service__img::after {
-        background-image: url('../img/rocket.png');
-        width: 41px;
-        height: 41px;
         top: 26px;
         left: 20px;
+        width: 41px;
+        height: 41px;
+        background-image: url('../img/rocket.png');
       }
     }
 
     &_academy {
-      transform: translate(-250px, -180px);
       z-index: 2;
+      transform: translate(-250px, -180px);
       transition-delay: ($delay + $delay-interval * 5);
 
       .service__img::after {
-        background-image: url('../img/diagram-2.png');
-        width: 48px;
-        height: 44px;
         top: 21px;
         left: 16px;
+        width: 48px;
+        height: 44px;
+        background-image: url('../img/diagram-2.png');
       }
     }
 
     &_mirror-trading {
-      transform: translate(-66px, -281px);
       z-index: 3;
+      transform: translate(-66px, -281px);
       transition-delay: ($delay + $delay-interval * 6);
 
       .service__img::after {
-        background-image: url('../img/cup.png');
-        width: 40px;
-        height: 35px;
         top: 29px;
         left: 24px;
+        width: 40px;
+        height: 35px;
+        background-image: url('../img/cup.png');
       }
     }
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     &__hover {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-
       left: calc(100% + 20px); // Re
+
+      transform: translateY(-50%);
     }
     //}
     &__text {
-      color: #888888;
-      text-transform: uppercase;
-      font-size: 14px;
+      color: #fff;
+      font-size: 16px;
+      //text-transform: uppercase;
       white-space: nowrap;
     }
 
-    //@include media-breakpoint-up(lg) {
+    //@include media-breakpoint-up(md) {
     &__icon {
       position: absolute;
       z-index: 1;
 
-      width: 31px;
-      height: 31px;
-
-      background: black;
-      border: 1px solid $orange;
-      border-radius: 50%;
-
-      margin-top: -15px;
-
       top: 50%;
       left: calc(100% + 11px); // Re
+
+      width: 31px;
+      height: 31px;
+      margin-top: -15px;
+
+      border: 1px solid $main-color;
+
+      border-radius: 50%;
+      background: #fff;
 
       &::before,
       &::after {
         content: '';
         position: absolute;
 
-        width: 13px;
-        height: 1px;
-
-        background: $orange;
         top: 50%;
         left: 50%;
+
+        width: 13px;
+        height: 1px;
         transition: $animation;
+        background: $main-color;
       }
 
       &::before {
@@ -347,21 +331,21 @@
     }
 
     &__hidden {
-      width: to-rem(315px);
       position: absolute;
-      border: 1px solid $orange;
-      background: rgba(black, .6);
-
-      transform: scale(0);
-      transition: $animation;
-      @include font-size(18px);
-      line-height: 1.33333;
-      padding: to-rem(15px) to-rem(28px);
-
       top: 50%;
-
       left: calc(100% + 26px);
+      width: to-rem(315px);
+      padding: to-rem(15px) to-rem(28px);
+      transform: scale(0);
       transform-origin: left top;
+      transition: $animation;
+
+      border: 1px solid #fff;
+
+      //background: rgba(black, .6);
+      @include font-size(16px);
+      color: #fff;
+      line-height: (24 / 16);
     }
   }
 }

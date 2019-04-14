@@ -1,7 +1,17 @@
-<svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="69px" height="64px">
-    <path fill-rule="evenodd" fill="rgb(246, 197, 93)"
-          d="M49.948,31.796 L49.948,34.556 L59.886,34.556 L59.886,63.541 L34.490,63.541 L34.490,38.697 C34.490,16.338 44.151,5.572 65.131,0.879 L68.443,10.541 C55.745,15.233 49.948,21.582 49.948,31.796 ZM15.444,31.796 L15.444,34.556 L25.382,34.556 L25.382,63.541 L-0.014,63.541 L-0.014,38.697 C-0.014,16.338 9.647,5.572 30.627,0.879 L33.939,10.541 C21.241,15.233 15.444,21.582 15.444,31.796 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="56.75" viewBox="0 0 62 56.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6c55d;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1220.16" y="715.812" width="62" height="56.75" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="1220.16" y="715.812" width="62" height="56.75" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjIiIGhlaWdodD0iNTYuNzUiIHZpZXdCb3g9IjAgMCA2MiA1Ni43NSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI2MiIgeTE9IjU0LjM4NyIgeDI9IjAiIHkyPSIyLjM2MyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzM2E2ZDkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWQ4ZmVjIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI2MiIgaGVpZ2h0PSI1Ni43NSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="_" data-name=",," class="cls-1" d="M1223.14,772.554c19-4.25,27.75-14,27.75-34.25v-22.5h-23v26.249h9v2.5c0,9.25-5.25,15-16.75,19.25Zm31.25,0c19-4.25,27.75-14,27.75-34.25v-22.5h-23v26.249h9v2.5c0,9.25-5.25,15-16.75,19.25Z" transform="translate(-1220.16 -715.812)"/>
 </svg>

@@ -1,43 +1,66 @@
 .last {
-  padding-top: 40px;
+  position: relative;
+  padding-top: 41px;
   padding-bottom: 50px;
+  text-align: center;
 
-  @include media-breakpoint-up(lg) {
-    text-align: center;
-    padding-top: to-rem(40px);
-    padding-bottom: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('../img/last-img.png');
+    background-size: contain;
+    pointer-events: none;
   }
 
-  @include media-breakpoint-up(lg) {
-    &__container {
-      //max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      max-width: response-width(720px);
+  @include media-breakpoint-up(md) {
+    padding-top: 115px;
+    padding-bottom: 135px;
+    text-align: left;
+    //padding-left: (68px);
+    //background: url("../img/last-section-bg.jpg") center no-repeat;
+    //background-size: cover;
+    &::before {
+      top: 70px;
+      left: calc(50% - 100px);
+      width: 724px;
+      height: 525px;
     }
   }
+  @include media-breakpoint-up(xl) {
+    //text-align: left;
+    padding-top: to-rem(260px);
+    padding-bottom: to-rem(360px);
+    padding-left: to-rem(68px);
+    //background: url("../img/last-section-bg.jpg") center no-repeat;
+    //background-size: cover;
+
+    &::before {
+      top: to-rem(151px);
+      left: calc(50% - #{to-rem(195px)});
+      width: to-rem(1108px);
+      height: to-rem(803px);
+    }
+  }
+
   &__title {
-    //max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    //margin-bottom: 40px;
-    margin-bottom: to-rem(40px);
-
-    @include media-breakpoint-up(lg) {
-      max-width: response-width(900px);
+    @include media-breakpoint-up(md) {
+      max-width: 440px;
+      margin-bottom: 26px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: response-width(700px);
+      margin-bottom: to-rem(46px);
     }
   }
+
   &__subtitle {
-    //max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    //margin-bottom: 60px;
-    margin-bottom: to-rem(60px);
-
-    @include media-breakpoint-up(lg) {
-      max-width: response-width(750px);
+    @include media-breakpoint-up(md) {
+      max-width: 440px;
+      margin-bottom: 39px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: response-width(620px);
+      margin-bottom: to-rem(38px);
     }
   }
-  //&__
 }

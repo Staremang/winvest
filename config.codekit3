@@ -37,6 +37,246 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
+	"/fonts/MuseoCyrl/MuseoCyrl-100.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-100.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-100.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-100Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-300.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-300.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-300.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-300Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-500.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-500.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-500.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-500Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-700.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-700.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-700.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-700Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-900.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-900.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-900.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-900Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff2",
+		"oF": 0
+		},
 	"/fonts/Neumann.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -268,22 +508,77 @@
 		"oT": 1,
 		"q": 80
 		},
-	"/img/bg.jpg": {
-		"ft": 16384,
-		"iS": 17352,
-		"jF": 0,
+	"/img/bg.png": {
+		"ft": 32768,
+		"iS": 5517,
 		"oA": 0,
-		"oAP": "/build/img/bg.jpg",
+		"oAP": "/build/img/bg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
-		"q": 73
+		"oT": 1,
+		"q": 80
+		},
+	"/img/border-small-white.png": {
+		"ft": 32768,
+		"iS": 1536,
+		"oA": 0,
+		"oAP": "/build/img/border-small-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/border-small.png": {
+		"ft": 32768,
+		"iS": 1574,
+		"oA": 0,
+		"oAP": "/build/img/border-small.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
 		},
 	"/img/border.png": {
 		"ft": 32768,
 		"iS": 22405,
 		"oA": 0,
 		"oAP": "/build/img/border.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/button-bg.jpg": {
+		"ft": 16384,
+		"iS": 3630,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/img/button-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 73
+		},
+	"/img/button-bg.png": {
+		"ft": 32768,
+		"iS": 7620,
+		"oA": 0,
+		"oAP": "/build/img/button-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/button-play-bg.png": {
+		"ft": 32768,
+		"iS": 1883,
+		"oA": 0,
+		"oAP": "/build/img/button-play-bg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -323,22 +618,44 @@
 		"oT": 1,
 		"q": 80
 		},
-	"/img/hero-man-2.png": {
+	"/img/group-1-bg.png": {
 		"ft": 32768,
-		"iS": 179383,
+		"iS": 135935,
 		"oA": 0,
-		"oAP": "/build/img/hero-man-2.png",
+		"oAP": "/build/img/group-1-bg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 80
 		},
-	"/img/hero-man.png": {
+	"/img/group-2-bg.png": {
 		"ft": 32768,
-		"iS": 186507,
+		"iS": 166623,
 		"oA": 0,
-		"oAP": "/build/img/hero-man.png",
+		"oAP": "/build/img/group-2-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/group-4-bg.png": {
+		"ft": 32768,
+		"iS": 74721,
+		"oA": 0,
+		"oAP": "/build/img/group-4-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/hero-img.png": {
+		"ft": 32768,
+		"iS": 930065,
+		"oA": 0,
+		"oAP": "/build/img/hero-img.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -386,11 +703,55 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/line-right.png": {
+	"/img/last-img.png": {
 		"ft": 32768,
-		"iS": 1372,
+		"iS": 560070,
 		"oA": 0,
-		"oAP": "/build/img/line-right.png",
+		"oAP": "/build/img/last-img.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/last-section-bg.jpg": {
+		"ft": 16384,
+		"iS": 451832,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/img/last-section-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 73
+		},
+	"/img/line-arrow-1.png": {
+		"ft": 32768,
+		"iS": 1909,
+		"oA": 0,
+		"oAP": "/build/img/line-arrow-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/line-arrow-2.png": {
+		"ft": 32768,
+		"iS": 1459,
+		"oA": 0,
+		"oAP": "/build/img/line-arrow-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 80
+		},
+	"/img/line-arrow-3.png": {
+		"ft": 32768,
+		"iS": 1899,
+		"oA": 0,
+		"oAP": "/build/img/line-arrow-3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -407,6 +768,16 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 80
+		},
+	"/img/logo-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/img/logo-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/img/logo.png": {
 		"ft": 32768,
@@ -429,49 +800,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/mouse.png": {
+	"/img/phone-1.png": {
 		"ft": 32768,
-		"iS": 504,
+		"iS": 338874,
 		"oA": 0,
-		"oAP": "/build/img/mouse.png",
+		"oAP": "/build/img/phone-1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 80
 		},
-	"/img/page-1-bg.jpg": {
-		"ft": 16384,
-		"iS": 42569,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/build/img/page-1-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 73
-		},
-	"/img/page-5-bg-m.png": {
+	"/img/phone-2.png": {
 		"ft": 32768,
-		"iS": 196989,
+		"iS": 380070,
 		"oA": 0,
-		"oAP": "/build/img/page-5-bg-m.png",
+		"oAP": "/build/img/phone-2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 80
-		},
-	"/img/page-5-bg.jpg": {
-		"ft": 16384,
-		"iS": 36438,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/build/img/page-5-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 73
 		},
 	"/img/play-inner-circle.png": {
 		"ft": 32768,
@@ -495,11 +844,11 @@
 		"oT": 1,
 		"q": 80
 		},
-	"/img/quote-decor-line.png": {
+	"/img/profit-img.png": {
 		"ft": 32768,
-		"iS": 479,
+		"iS": 785455,
 		"oA": 0,
-		"oAP": "/build/img/quote-decor-line.png",
+		"oAP": "/build/img/profit-img.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -523,27 +872,16 @@
 		"oT": 1,
 		"q": 80
 		},
-	"/img/section-decor.png": {
-		"ft": 32768,
-		"iS": 663,
+	"/img/section-blue-bg.jpg": {
+		"ft": 16384,
+		"iS": 289009,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/img/section-decor.png",
+		"oAP": "/build/img/section-blue-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
-		"q": 80
-		},
-	"/img/service-img-bg.png": {
-		"ft": 32768,
-		"iS": 16014,
-		"oA": 0,
-		"oAP": "/build/img/service-img-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 80
+		"q": 73
 		},
 	"/img/services-bg.png": {
 		"ft": 32768,
@@ -567,28 +905,6 @@
 		"oT": 1,
 		"q": 80
 		},
-	"/img/tel-2.png": {
-		"ft": 32768,
-		"iS": 234387,
-		"oA": 0,
-		"oAP": "/build/img/tel-2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 80
-		},
-	"/img/tel.png": {
-		"ft": 32768,
-		"iS": 225678,
-		"oA": 0,
-		"oAP": "/build/img/tel.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 80
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -598,15 +914,15 @@
 		"oF": 0
 		},
 	"/js/main.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/build/js/main.min.js",
 		"oF": 0,
 		"sC": 0,
-		"tS": 0
+		"tS": 1
 		},
 	"/libs/jquery-3.3.1.min.js": {
 		"bF": 4,
@@ -640,6 +956,31 @@
 		"oF": 3,
 		"sC": 0,
 		"tS": 0
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/build/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/scss/_affiliate-program.scss": {
 		"aP": 1,
@@ -902,7 +1243,7 @@
 		"uL": 1
 		},
 	"/scss/main.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -1576,6 +1917,14 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/yarn.lock": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/build/yarn.lock",
+		"oF": 1
 		}
 	},
 "hooks": [
@@ -1588,7 +1937,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-cocaine",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 574376161.93802702
+	"lastBuiltDate": 576974932.04299498
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

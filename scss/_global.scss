@@ -1,248 +1,317 @@
-//html {
-//  &:not(.fp-enabled) {
-//    .section {
-//      height: 100vh;
-//    }
-//  }
-//}
-.orange {
-  color: $orange;
-}
-
 html {
   font-size: 16px;
-  @include media-breakpoint-up(lg) {
-    font-size: 16/1920 * 100vw;
+  //@include media-breakpoint-up(md) {
+  //  @if ($enable-responsive) {
+  //    font-size: 16/1040 * 100vw;
+  //  }
+  //}
+  @include media-breakpoint-up(xl) {
+    @if ($enable-responsive) {
+      font-size: 16/1920 * 100vw;
+    }
   }
 }
 
 body {
-  background: black url('../img/bg.jpg') no-repeat fixed center;
-  background-size: 100% 100%;
-
+  background: url("../img/bg.png");
   font-size: 14px;
-  line-height: 1.5;
+  line-height: (20 / 14);
 
-  @if $dev-mode {
-    background: url("../img/rm/mob-320.png") center top no-repeat;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 1.5;
   }
-  @include media-breakpoint-up(lg) {
-    @include font-size(20px);
-    line-height: 1.3;
+
+  @include media-breakpoint-up(xl) {
+    @include font-size(18px);
+    line-height: 1.5;
+  }
+
+
+  @include dev {
+    background: url("../img/rm/360.png") center top no-repeat;
+    background-size: 360px auto;
+    @include media-breakpoint-up(md) {
+      background: url("../img/rm/1040.png") center top no-repeat;
+      background-size: 1040px auto;
+    }
+    @include media-breakpoint-up(xl) {
+      background: url("../img/rm/1920.png") center top no-repeat;
+      background-size: 1920px auto;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: map_get($container-max-widths, xs);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media-breakpoint-up(md) {
+    max-width: map_get($container-max-widths, md);
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: response-width(map_get($container-max-widths, xl));
   }
 }
 
 .loader {
+  display: flex;
   position: fixed;
-  left: 0;
+  z-index: 9999;
   top: 0;
   right: 0;
   bottom: 0;
-  background: black;
-  z-index: 9999;
-  display: flex;
+  left: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #fff;
+
   &__logo {
     width: 339px*0.5;
     height: 91px*0.5;
   }
+
   &__title {
+    margin-top: 20px;
     color: $main-color;
     font-size: 20px;
-    margin-top: 20px;
   }
-  @include media-breakpoint-up(lg) {
+
+  @include media-breakpoint-up(md) {
     &__logo {
       width: 339px;
       height: 91px;
     }
     &__title {
-      font-size: 40px;
       margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+}
+
+.main {
+  //@include media-breakpoint-up(md) {
+  //  overflow: hidden;
+  //}
+
+  &__clip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    clip: rect(auto, auto, auto, auto);
+    pointer-events: none;
+
+    //&::before {
+    //  content: '';
+    //  position: fixed;
+    //  top: 0;
+    //  right: 0;
+    //  left: 0;
+    //  height: 150px;
+    //  background-color: #fff;
+    //  z-index: 100;
+    //}
+  }
+  &__group {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920px 100%;
+    //clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 100% 100%);
+    //clip-path: polygon(0% 100%, 100% 100%, 100% 0%,0% 0%);
+
+    //clip: rect(auto, auto, auto, auto);
+    //background-image: url("../img/bg.png");
+    background-color: white;
+
+    &_first {
+      background-image: url("../img/group-1-bg.png");
+    }
+
+    &_white-2 {
+      background-image: url("../img/group-2-bg.png");
+    }
+
+    &_white-3 {
+
+    }
+
+    &_last {
+      background-image: url("../img/group-4-bg.png");
+    }
+
+    &_blue {
+      background-image: url("../img/section-blue-bg.jpg"), $linear-gradient;
+      color: #fff;
+      //clip-path: polygon(0% 100%, 100% 100%, 100% 0%,0% 0%);
+
+      .section-title {
+        color: #fff;
+      }
+
+      //clip: rect(auto, auto, auto, auto);
+      //&::before {
+      //  content: '';
+      //  position: fixed;
+      //  top: 0;
+      //  right: 0;
+      //  left: 0;
+      //  height: 150px;
+      //  background-color: #fff;
+      //  z-index: 100;
+      //}
     }
   }
 }
 
 .section {
-
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  overflow: hidden;
-  padding-bottom: 40px;
-
-  &::after {
-    content: '';
-    background: url("../img/section-decor.png") center no-repeat;
-    background-size: contain;
-    width: 360px;
-    height: 13px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -180px;
-  }
-  //overflow: hidden;
-  //
-  @include media-breakpoint-up(lg) {
-    //
-    //  display: flex;
-    //  flex-direction: column;
-    //  justify-content: center;
-    padding-bottom: 0;
-    &::after {
-      display: none;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    @if $dev-mode {
-      $i: 11;
-
-      @while $i > 0 {
-        &:nth-child(#{$i}) {
-          @if $i < 10 {
-            background-image: url("../img/rm/0#{$i}.png");
-          } @else {
-            background-image: url("../img/rm/#{$i}.png");
-          }
-          background-size: 100% auto;
-          background-position: center;
-        }
-
-        $i: $i - 1;
-      }
-    }
-  }
-
-  //@include media-breakpoint-up(lg) {
-  //  :not(.onepage-wrapper) & {
-  //    height: 100vh;
-  //  }
-  //}
-  &__container {
-  }
 }
 
 .section-title {
-  font-family: $font-family-neumann;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 34px;
+  color: $main-color;
+  font-family: $font-family-museo;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
 
-  @include media-breakpoint-up(lg) {
-    //font-size: 42px;
-    //line-height: 60px;
-    @include font-size(42px);
-    line-height: 1.43;
+  .selected {
+    color: #000;
   }
 
+  @include media-breakpoint-up(md) {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    @include font-size(58px);
+    line-height: 1;
+  }
 }
 
 .section-subtitle {
   font-size: 14px;
   line-height: 20px;
 
-  @include media-breakpoint-up(lg) {
-    //font-size: 20px;
-    @include font-size(20px);
-    line-height: 1.3;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @include media-breakpoint-up(xl) {
+    @include font-size(18px);
+    line-height: 1.5;
   }
 }
 
 .section-list {
-  padding-left: 28px;
+  padding-left: 19px;
   list-style: none;
+
   li {
     position: relative;
-    &:not(:last-child) {
-      margin-bottom: 23px;
 
-      @include media-breakpoint-up(lg) {
-        margin-bottom: to-rem(27px);
-      }
+    &:not(:last-child) {
+      margin-bottom: 14px;
     }
+
     &:before {
       content: '';
       position: absolute;
-      width: 9px;
-      height: 9px;
-      border: 1px solid $main-color;
-      left: -23px;
-      top: 9px;
-      transform: rotate(45deg);
+      top: 7px;
+      left: -20px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-image: $linear-gradient;
     }
   }
-}
 
-.selected {
-  color: $main-color;
-}
+  @include media-breakpoint-up(md) {
+    padding-left: 18px;
 
-//@if $dev-mode {
-//  body {
-//    background-image: url("../img/rm/1920.png");
-//    background-size: 1920px auto;
-//    background-position: center top;
-//    background-repeat: no-repeat;
-//  }
-//}
+    li {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
 
-// Углы у кнопок
-%button-corners {
-  content: '';
-  width: 81px;
-  height: 13px;
-  border: 1px solid $orange;
-  position: absolute;
-  transition: transform .3s ease;
+      &::before {
+        top: 9px;
+        left: -18px;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    padding-left: 18px;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: to-rem(21px);
+      }
+
+      &::before {
+        top: 9px;
+        left: -18px;
+      }
+    }
+  }
 }
 
 .button {
-  @include button-reset();
   position: relative;
+  min-width: 250px;
+  padding: 26px 40px 25px;
+  //transition: box-shadow .3s ease;
+  border: 0;
+  border-radius: 77px;
+  background: $main-color url("../img/button-bg.jpg") no-repeat;
+  background-size: cover;
+  box-shadow: (
+    0px -1px 0px 0px rgba(#fff, 0.15) inset,
+    0px -12px 29px 0px rgba($btn-color-shadow, 0.83) inset,
+    0px 5px 0px 0px rgba($btn-color-shadow, 1),
+    0px 30px 15px -15px rgba($btn-color-shadow-bottom, 0.5)
+  );
+  color: #fff;
+  font-family: $font-family-museo;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0px -1px 0px #258dd7;
 
-  text-transform: uppercase;
-
-  font-size: 14px;
-  line-height: 24px;
-  padding: 9px 40px 7px;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
+    //@include font-size(18px);
+    //padding: to-rem(30px) to-rem(37px) to-rem(29px);
+    //line-height: 1;
+  }
+  @include media-breakpoint-up(xl) {
     @include font-size(18px);
-    line-height: 1.33333;
-    padding: to-rem(18px) to-rem(37px);
-  }
-
-  &::before {
-    @extend %button-corners;
-
-    border-bottom: 0;
-    border-right: 0;
-    top: 0;
-    left: 0;
-  }
-
-  &::after {
-    @extend %button-corners;
-
-    border-top: 0;
-    border-left: 0;
-    right: 0;
-    bottom: 0;
+    min-width: 278px;
+    padding: to-rem(30px) to-rem(37px) to-rem(29px);
   }
 
   &:hover {
-    &::before {
-      transform: translate(-5px, -5px);
-    }
-
-    &::after {
-      transform: translate(5px, 5px);
-    }
+    box-shadow: (
+      0px -1px 0px 0px rgba(#fff, 0.15) inset,
+      0px -12px 29px 0px rgba($btn-color-shadow, 0.83) inset,
+      0px 5px 0px 0px rgba($btn-color-shadow, 1),
+    );
   }
+
+  &:active {
+    transform: translateY(5px);
+    box-shadow: (
+      0px -1px 0px 0px rgba(#fff, 0.15) inset,
+      0px -12px 29px 0px rgba($btn-color-shadow, 0.83) inset,
+    );
+  }
+
   &:focus {
     outline: none;
   }
@@ -312,7 +381,7 @@ body {
     }
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     .active {
       .fadeInDown {
         animation-name: fadeInDown;

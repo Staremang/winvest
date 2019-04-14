@@ -1,56 +1,79 @@
 .affiliate-program {
   padding-top: 41px;
+  padding-bottom: 20px;
 
-  @include media-breakpoint-up(lg) {
-    padding-top: to-rem(112px);
+  @include media-breakpoint-up(md) {
+    padding-top: 57px;
+    padding-bottom: 20px;
+    text-align: center;
   }
-  //display: block;
-  //padding-top: 360px;
+  @include media-breakpoint-up(xl) {
+    padding-top: to-rem(198px);
+    padding-bottom: to-rem(160px);
+    padding-left: response-width(619px);
+    text-align: left;
+  }
 
+  &::after {
+    content: '';
+    display: block;
+    width: 323px;
+    height: 400px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    background: url("../img/affiliate-program-table.png") no-repeat;
+    background-size: contain;
 
-  &__container {
-
-    @include media-breakpoint-up(lg) {
-      margin-left: 50%;
-      padding-left: to-rem(32px);
-      max-width: response-width(780px);
-      position: relative;
+    @include media-breakpoint-up(md) {
+      width: 533px;
+      height: 659px;
+      margin-top: 17px;
     }
-
-    &::after {
-      content: '';
-      background: url("../img/affiliate-program-table.png") no-repeat;
-      background-size: contain;
-      width: 323px;
-      height: 557px;
-      margin-top: -54px;
-      margin-bottom: -82px;
-      display: block;
-
-      @include media-breakpoint-up(lg) {
-        width: to-rem(527px);
-        height: to-rem(867px);
-
-        position: absolute;
-
-        top: 50%;
-        right: 100%;
-
-        margin-top: to-rem(-444px);
-        margin-right: to-rem(60px);
-        margin-bottom: 0;
-      }
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      top: to-rem(91px);
+      left: 0;
+      //left: calc(50% - #{to-rem(1170px / 2)});
+      width: to-rem(533px);
+      height: to-rem(659px);
+      margin-top: 0;
     }
   }
+
   &__title {
-    margin-bottom: 18px;
-    white-space: nowrap;
-    @include media-breakpoint-up(lg) {
-      margin-bottom: to-rem(32px);
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 38px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: to-rem(49px);
     }
   }
+
   &__list {
     margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+
     //@include font-size(20px);
+    @include media-breakpoint-only(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 680px;
+      margin-right: auto;
+      margin-left: auto;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 26px;
+        }
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      margin-left: 0;
+      @include font-size(18px);
+    }
   }
 }
