@@ -959,9 +959,9 @@
 		},
 	"/node_modules": {
 		"ft": 65536,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/build/node_modules",
-		"oF": 0
+		"oF": 1
 		},
 	"/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js": {
 		"bF": 4,
@@ -1937,7 +1937,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-cocaine",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 576974932.04299498
+	"lastBuiltDate": 576975431.36830795
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
