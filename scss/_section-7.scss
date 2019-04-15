@@ -233,7 +233,7 @@
   }
   @include media-breakpoint-up(xl) {
     &_1 {
-      top: to-rem(-42px);
+      top: to-rem(0px);
       left: calc(50% - #{to-rem(352px)});
 
       width: to-rem(375px);

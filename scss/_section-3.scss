@@ -342,9 +342,9 @@
 
       border: 1px solid #fff;
 
-      //background: rgba(black, .6);
+      background: rgba(#fff, .9);
       @include font-size(16px);
-      color: #fff;
+      color: #434343;
       line-height: (24 / 16);
     }
   }
