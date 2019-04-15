@@ -6,11 +6,12 @@
 
   @include media-breakpoint-up(md) {
     padding-top: 65px;
-    padding-bottom: 76px;
+    //padding-bottom: 76px;
+    padding-bottom: 0;
   }
   @include media-breakpoint-up(xl) {
     padding-top: to-rem(103px);
-    padding-bottom: to-rem(102px);
+    //padding-bottom: to-rem(102px);
   }
 
   &__slogan {
@@ -67,6 +68,7 @@
     position: relative;
     flex-direction: column;
     align-items: stretch;
+    padding-bottom: 76px;
     padding-left: 220px;
     &__list {
       margin-top: 0;
@@ -79,6 +81,7 @@
   @include media-breakpoint-up(xl) {
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: to-rem(102px);
     padding-left: 0;
     &__list {
       z-index: 1;
@@ -195,6 +198,7 @@
 .trader-photo {
   display: none;
   position: absolute;
+  pointer-events: none;
 
   &.active {
     display: block;
@@ -208,32 +212,36 @@
 
   @include media-breakpoint-up(md) {
     &_1 {
-      top: 78px;
+      //top: 78px;
+      bottom: 0;
       left: calc(50% - 400px);
       width: 337px;
-      height: 615px;
       //transform: translate(-50%, -50%);
+      height: 615px;
     }
 
     &_2 {
-      width: to-rem(483px);
-      height: to-rem(568px);
+      //top: 40px;
+      bottom: -90px;
+      left: calc(50% - 480px);
       //transform: translate(-50%, -50%);
-      left: calc(50% - 509px);
-      top: 40px;
+      width: (404px*0.9);
+      height: (766px*0.9);
     }
 
     &_3 {
-      width: 452px;
-      height: 678px;
-      left: calc(50% - 469px);
-      top: 50px;
+      //top: 50px;
+      bottom: 0;
+      left: calc(50% - 500px);
+      width: (543px*0.9);
+      height: (658px*0.9);
       //transform: translate(-50%, -50%);
     }
   }
   @include media-breakpoint-up(xl) {
+    z-index: 2;
     &_1 {
-      top: to-rem(0px);
+      //top: to-rem(0px);
       left: calc(50% - #{to-rem(352px)});
 
       width: to-rem(375px);
@@ -241,20 +249,22 @@
       //transform: translate(-50%, -50%);
     }
 
+    // Iaroslavski Galia
     &_2 {
-      width: to-rem(483px);
-      height: to-rem(568px);
+      //top: to-rem(10px);
+      bottom: to-rem(-90px);
+      left: calc(50% - #{to-rem(380px)});
       //transform: translate(-50%, -50%);
-      left: calc(50% - 359px);
-      top: 10px;
+      width: to-rem(404px);
+      height: to-rem(766px);
     }
-
+    // Vasserman Ben
     &_3 {
-      width: to-rem(483px);
-      height: to-rem(678px);
+      //top: to-rem(10px);
+      left: calc(50% - #{to-rem(410px)});
       //transform: translate(-50%, -50%);
-      left: calc(50% - 359px);
-      top: 10px;
+      width: to-rem(543px);
+      height: to-rem(658px);
     }
   }
 }
