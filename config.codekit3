@@ -37,389 +37,677 @@
 		"oAP": "/build/build",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-100.ttf": {
+	"/fonts/MullerBlack.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100.ttf",
+		"oAP": "/build/fonts/MullerBlack.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-100.woff": {
+	"/fonts/MullerBlack.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100.woff",
+		"oAP": "/build/fonts/MullerBlack.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-100.woff2": {
+	"/fonts/MullerBlack.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100.woff2",
+		"oAP": "/build/fonts/MullerBlack.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-100Italic.ttf": {
+	"/fonts/MullerBlackItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100Italic.ttf",
+		"oAP": "/build/fonts/MullerBlackItalic.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff": {
+	"/fonts/MullerBlackItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff",
+		"oAP": "/build/fonts/MullerBlackItalic.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff2": {
+	"/fonts/MullerBlackItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-100Italic.woff2",
+		"oAP": "/build/fonts/MullerBlackItalic.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-300.ttf": {
+	"/fonts/MullerBold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300.ttf",
+		"oAP": "/build/fonts/MullerBold.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-300.woff": {
+	"/fonts/MullerBold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300.woff",
+		"oAP": "/build/fonts/MullerBold.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-300.woff2": {
+	"/fonts/MullerBold.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300.woff2",
+		"oAP": "/build/fonts/MullerBold.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-300Italic.ttf": {
+	"/fonts/MullerBoldItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300Italic.ttf",
+		"oAP": "/build/fonts/MullerBoldItalic.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff": {
+	"/fonts/MullerBoldItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff",
+		"oAP": "/build/fonts/MullerBoldItalic.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff2": {
+	"/fonts/MullerBoldItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-300Italic.woff2",
+		"oAP": "/build/fonts/MullerBoldItalic.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-500.ttf": {
+	"/fonts/MullerExtraBold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500.ttf",
+		"oAP": "/build/fonts/MullerExtraBold.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-500.woff": {
+	"/fonts/MullerExtraBold.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500.woff",
+		"oAP": "/build/fonts/MullerExtraBold.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-500.woff2": {
+	"/fonts/MullerExtraBold.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500.woff2",
+		"oAP": "/build/fonts/MullerExtraBold.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-500Italic.ttf": {
+	"/fonts/MullerExtraBoldItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500Italic.ttf",
+		"oAP": "/build/fonts/MullerExtraBoldItalic.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff": {
+	"/fonts/MullerExtraBoldItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff",
+		"oAP": "/build/fonts/MullerExtraBoldItalic.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff2": {
+	"/fonts/MullerExtraBoldItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-500Italic.woff2",
+		"oAP": "/build/fonts/MullerExtraBoldItalic.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-700.ttf": {
+	"/fonts/MullerHeavy.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700.ttf",
+		"oAP": "/build/fonts/MullerHeavy.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-700.woff": {
+	"/fonts/MullerHeavy.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700.woff",
+		"oAP": "/build/fonts/MullerHeavy.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-700.woff2": {
+	"/fonts/MullerHeavy.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700.woff2",
+		"oAP": "/build/fonts/MullerHeavy.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-700Italic.ttf": {
+	"/fonts/MullerHeavyItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700Italic.ttf",
+		"oAP": "/build/fonts/MullerHeavyItalic.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff": {
+	"/fonts/MullerHeavyItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff",
+		"oAP": "/build/fonts/MullerHeavyItalic.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff2": {
+	"/fonts/MullerHeavyItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-700Italic.woff2",
+		"oAP": "/build/fonts/MullerHeavyItalic.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-900.ttf": {
+	"/fonts/MullerLight.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900.ttf",
+		"oAP": "/build/fonts/MullerLight.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-900.woff": {
+	"/fonts/MullerLight.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900.woff",
+		"oAP": "/build/fonts/MullerLight.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-900.woff2": {
+	"/fonts/MullerLight.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900.woff2",
+		"oAP": "/build/fonts/MullerLight.woff2",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-900Italic.ttf": {
+	"/fonts/MullerLightItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900Italic.ttf",
+		"oAP": "/build/fonts/MullerLightItalic.ttf",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff": {
+	"/fonts/MullerLightItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff",
+		"oAP": "/build/fonts/MullerLightItalic.woff",
 		"oF": 0
 		},
-	"/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff2": {
+	"/fonts/MullerLightItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/MuseoCyrl/MuseoCyrl-900Italic.woff2",
+		"oAP": "/build/fonts/MullerLightItalic.woff2",
 		"oF": 0
 		},
-	"/fonts/Neumann.ttf": {
+	"/fonts/MullerMedium.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Neumann.ttf",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerMedium.ttf",
+		"oF": 0
 		},
-	"/fonts/Neumann.woff": {
+	"/fonts/MullerMedium.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Neumann.woff",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerMedium.woff",
+		"oF": 0
 		},
-	"/fonts/Neumann.woff2": {
+	"/fonts/MullerMedium.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Neumann.woff2",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerMedium.woff2",
+		"oF": 0
 		},
-	"/fonts/Podkova-Bold.ttf": {
+	"/fonts/MullerMediumItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Bold.ttf",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerMediumItalic.ttf",
+		"oF": 0
 		},
-	"/fonts/Podkova-Bold.woff": {
+	"/fonts/MullerMediumItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Bold.woff",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerMediumItalic.woff",
+		"oF": 0
 		},
-	"/fonts/Podkova-Bold.woff2": {
+	"/fonts/MullerMediumItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Bold.woff2",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerMediumItalic.woff2",
+		"oF": 0
 		},
-	"/fonts/Podkova-ExtraBold.ttf": {
+	"/fonts/MullerRegular.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-ExtraBold.ttf",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerRegular.ttf",
+		"oF": 0
 		},
-	"/fonts/Podkova-ExtraBold.woff": {
+	"/fonts/MullerRegular.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-ExtraBold.woff",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerRegular.woff",
+		"oF": 0
 		},
-	"/fonts/Podkova-ExtraBold.woff2": {
+	"/fonts/MullerRegular.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-ExtraBold.woff2",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerRegular.woff2",
+		"oF": 0
 		},
-	"/fonts/Podkova-Medium.ttf": {
+	"/fonts/MullerRegularItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Medium.ttf",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerRegularItalic.ttf",
+		"oF": 0
 		},
-	"/fonts/Podkova-Medium.woff": {
+	"/fonts/MullerRegularItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Medium.woff",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerRegularItalic.woff",
+		"oF": 0
 		},
-	"/fonts/Podkova-Medium.woff2": {
+	"/fonts/MullerRegularItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Medium.woff2",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerRegularItalic.woff2",
+		"oF": 0
 		},
-	"/fonts/Podkova-Regular.ttf": {
+	"/fonts/MullerThin.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Regular.ttf",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerThin.ttf",
+		"oF": 0
 		},
-	"/fonts/Podkova-Regular.woff": {
+	"/fonts/MullerThin.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Regular.woff",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerThin.woff",
+		"oF": 0
 		},
-	"/fonts/Podkova-Regular.woff2": {
+	"/fonts/MullerThin.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-Regular.woff2",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerThin.woff2",
+		"oF": 0
 		},
-	"/fonts/Podkova-SemiBold.ttf": {
+	"/fonts/MullerThinItalic.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-SemiBold.ttf",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerThinItalic.ttf",
+		"oF": 0
 		},
-	"/fonts/Podkova-SemiBold.woff": {
+	"/fonts/MullerThinItalic.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-SemiBold.woff",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerThinItalic.woff",
+		"oF": 0
 		},
-	"/fonts/Podkova-SemiBold.woff2": {
+	"/fonts/MullerThinItalic.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/fonts/Podkova-SemiBold.woff2",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/build/fonts/MullerThinItalic.woff2",
+		"oF": 0
+		},
+	"/fonts/MullerUltraLight.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MullerUltraLight.ttf",
+		"oF": 0
+		},
+	"/fonts/MullerUltraLight.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MullerUltraLight.woff",
+		"oF": 0
+		},
+	"/fonts/MullerUltraLight.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MullerUltraLight.woff2",
+		"oF": 0
+		},
+	"/fonts/MullerUltraLightItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MullerUltraLightItalic.ttf",
+		"oF": 0
+		},
+	"/fonts/MullerUltraLightItalic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MullerUltraLightItalic.woff",
+		"oF": 0
+		},
+	"/fonts/MullerUltraLightItalic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MullerUltraLightItalic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-100.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-100.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-100.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-100.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-100.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-100.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-100Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-100Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-100Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-100Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-100Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-100Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-300.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-300.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-300.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-300.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-300.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-300.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-300Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-300Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-300Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-300Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-300Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-300Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-500.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-500.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-500.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-500.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-500.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-500.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-500Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-500Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-500Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-500Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-500Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-500Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-700.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-700.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-700.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-700.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-700.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-700.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-700Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-700Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-700Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-700Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-700Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-700Italic.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-900.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-900.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-900.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-900.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-900.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-900.woff2",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-900Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-900Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-900Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-900Italic.woff",
+		"oF": 0
+		},
+	"/fonts/MuseoCyrl-900Italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/MuseoCyrl-900Italic.woff2",
+		"oF": 0
 		},
 	"/images/filbeger-eduard-icon.jpg": {
 		"ft": 16384,
@@ -3392,7 +3680,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http://localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {

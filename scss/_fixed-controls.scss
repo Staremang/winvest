@@ -14,9 +14,11 @@
   right: 0;
   left: 0;
   height: 72px;
-
   padding-right: map_get($viewport-padding, xs);
   padding-left: map_get($viewport-padding, xs);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  //perspective: 1000;
   pointer-events: all;
   //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
 
@@ -372,8 +374,9 @@
     bottom: 100%;
     left: 0;
     clip: rect(auto, auto, auto, auto);
-    transition: bottom .5s ease;
+    transition: bottom .7s ease;
     pointer-events: none;
+    will-change: bottom;
 
     @include media-breakpoint-up(xl) {
       bottom: 0;
